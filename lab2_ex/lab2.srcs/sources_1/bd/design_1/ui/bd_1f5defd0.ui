@@ -1,0 +1,45 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.899471",
+   "Default View_TopLeft":"-310,-495",
+   "DisplayPinsOfHiddenNets":"1",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port FIXED_IO_0 -pg 1 -lvl 8 -x 1260 -y -500 -defaultsOSRD
+preplace port DDR_0 -pg 1 -lvl 8 -x 1260 -y -470 -defaultsOSRD
+preplace inst cg_fpga_0 -pg 1 -lvl 1 -x -160 -y -120 -defaultsOSRD
+preplace inst adpt_in_0 -pg 1 -lvl 3 -x 350 -y 10 -defaultsOSRD
+preplace inst and2_0 -pg 1 -lvl 5 -x 780 -y -210 -defaultsOSRD
+preplace inst and3_0 -pg 1 -lvl 5 -x 780 -y -340 -defaultsOSRD
+preplace inst and2_1 -pg 1 -lvl 5 -x 780 -y -90 -defaultsOSRD
+preplace inst and3_1 -pg 1 -lvl 5 -x 780 -y 40 -defaultsOSRD
+preplace inst and3_2 -pg 1 -lvl 5 -x 780 -y 180 -defaultsOSRD
+preplace inst or6_0 -pg 1 -lvl 6 -x 970 -y -70 -defaultsOSRD
+preplace inst not1_0 -pg 1 -lvl 4 -x 560 -y -180 -defaultsOSRD
+preplace inst not1_1 -pg 1 -lvl 4 -x 560 -y -70 -defaultsOSRD
+preplace inst adpt_out_0 -pg 1 -lvl 7 -x 1130 -y -70 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 5 -x 780 -y 300 -defaultsOSRD
+preplace netloc adpt_in_0_a 1 3 2 470 -130 680
+preplace netloc adpt_in_0_b 1 3 2 490 -20 670J
+preplace netloc adpt_in_0_mode_and 1 3 2 480 -320 NJ
+preplace netloc adpt_in_0_mode_or 1 3 2 N 30 660J
+preplace netloc adpt_in_0_mode_xor 1 3 2 N 50 630J
+preplace netloc adpt_out_0_led 1 0 8 -300 -310 -20J -170 150 -420 NJ -420 NJ -420 NJ -420 NJ -420 1220
+preplace netloc and2_0_y 1 5 1 880 -210n
+preplace netloc and2_1_y 1 5 1 900 -90n
+preplace netloc and3_0_y 1 5 1 900 -340n
+preplace netloc and3_1_y 1 5 1 880 -60n
+preplace netloc and3_2_y 1 5 1 890 -40n
+preplace netloc cg_fpga_0_gpio_sw_2 1 1 2 -20 10 N
+preplace netloc not1_0_y 1 4 1 640 -180n
+preplace netloc not1_1_y 1 4 1 650 -70n
+preplace netloc or6_0_y 1 6 1 N -70
+preplace netloc xlconstant_0_dout 1 5 1 900 -20n
+preplace netloc cg_fpga_0_DDR 1 1 7 NJ -180 140 -470 NJ -470 NJ -470 NJ -470 NJ -470 NJ
+preplace netloc cg_fpga_0_FIXED_IO 1 1 7 NJ -200 130 -500 NJ -500 NJ -500 NJ -500 NJ -500 NJ
+levelinfo -pg 1 -320 -160 110 350 560 780 970 1130 1260
+pagesize -pg 1 -db -bbox -sgen -490 -590 1430 410
+"
+}
+0

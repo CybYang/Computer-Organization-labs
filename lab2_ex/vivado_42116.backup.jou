@@ -1,0 +1,123 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Sep 21 10:46:25 2025
+# Process ID         : 42116
+# Current directory  : F:/Haoyang_Sun/experiments/lab2-ex
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent39084 F:\Haoyang_Sun\experiments\lab2-ex\lab2.xpr
+# Log file           : F:/Haoyang_Sun/experiments/lab2-ex/vivado.log
+# Journal file       : F:/Haoyang_Sun/experiments/lab2-ex\vivado.jou
+# Running On         : SKULL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 29775 MB
+# Available Virtual  : 14595 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Haoyang_Sun/experiments/lab2-ex/lab2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd}
+update_module_reference design_1_adpt_in_0_0
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_adpt_out_0_0 design_1_not1_0_0 design_1_and3_2_0 design_1_and2_0_0 design_1_not1_1_0 design_1_or6_0_0 design_1_and3_1_0 design_1_and3_0_0 design_1_and2_1_0}]
+update_module_reference [get_ips  {design_1_adpt_out_0_0 design_1_not1_0_0 design_1_and3_2_0 design_1_and2_0_0 design_1_not1_1_0 design_1_or6_0_0 design_1_and3_1_0 design_1_and3_0_0 design_1_and2_1_0}]
+update_module_reference [get_ips  {design_1_adpt_out_0_0 design_1_not1_0_0 design_1_and3_2_0 design_1_and2_0_0 design_1_not1_1_0 design_1_or6_0_0 design_1_and3_1_0 design_1_and3_0_0 design_1_and2_1_0}]
+update_module_reference [get_ips  {design_1_adpt_out_0_0 design_1_not1_0_0 design_1_and3_2_0 design_1_and2_0_0 design_1_not1_1_0 design_1_or6_0_0 design_1_and3_1_0 design_1_and3_0_0 design_1_and2_1_0}]
+generate_target all [get_files  F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_out_0_0_synth_1 -jobs 16
+wait_on_run design_1_adpt_out_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/lab2-ex/lab2.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/lab2-ex/lab2.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/lab2-ex/lab2.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+create_bd_design "design_2"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv educg.net:user:cg_fpga:1.4 cg_fpga_0
+endgroup
+update_module_reference [get_ips  design_1_adpt_out_0_0]
+current_bd_design [get_bd_designs design_1]
+generate_target all [get_files  F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_out_0_0_synth_1 -jobs 16
+wait_on_run design_1_adpt_out_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/lab2-ex/lab2.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/lab2-ex/lab2.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/lab2-ex/lab2.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+create_bd_cell -type module -reference logic4_to_led logic4_to_led_0
+delete_bd_objs [get_bd_cells logic4_to_led_0]
+current_bd_design [get_bd_designs design_2]
+close_bd_design [get_bd_designs design_2]
+open_bd_design {F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_2/design_2.bd}
+current_bd_design [get_bd_designs design_1]
+save_bd_design
+close_bd_design [get_bd_designs design_1]
+startgroup
+create_bd_cell -type ip -vlnv educg.net:user:cg_fpga:1.4 cg_fpga_0
+endgroup
+set_property location {0.5 -85 -246} [get_bd_cells cg_fpga_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins cg_fpga_0/FIXED_IO]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins cg_fpga_0/DDR]
+endgroup
+create_bd_cell -type module -reference adpt_in4_only adpt_in4_only_0
+set_property location {1 -174 -243} [get_bd_cells cg_fpga_0]
+create_bd_cell -type module -reference adpt_in4_modes adpt_in4_modes_0
+create_bd_cell -type module -reference logic4_to_led logic4_to_led_0
+connect_bd_net [get_bd_pins cg_fpga_0/gpio_sw_2] [get_bd_pins adpt_in4_modes_0/sw2]
+set_property location {2 207 -142} [get_bd_cells adpt_in4_modes_0]
+set_property location {3 421 -151} [get_bd_cells adpt_in4_only_0]
+set_property location {3.5 711 -143} [get_bd_cells logic4_to_led_0]
+set_property location {3.5 595 -142} [get_bd_cells logic4_to_led_0]
+connect_bd_net [get_bd_pins cg_fpga_0/gpio_sw_1] [get_bd_pins adpt_in4_only_0/sw1]
+set_property location {2 136 -31} [get_bd_cells adpt_in4_modes_0]
+set_property location {2 163 -191} [get_bd_cells adpt_in4_only_0]
+set_property location {2 140 -80} [get_bd_cells adpt_in4_modes_0]
+set_property location {2 147 -224} [get_bd_cells adpt_in4_modes_0]
+set_property location {2 137 -201} [get_bd_cells adpt_in4_modes_0]
+connect_bd_net [get_bd_pins adpt_in4_modes_0/A] [get_bd_pins logic4_to_led_0/A]
+connect_bd_net [get_bd_pins adpt_in4_only_0/B] [get_bd_pins logic4_to_led_0/B]
+connect_bd_net [get_bd_pins adpt_in4_modes_0/mode_and] [get_bd_pins logic4_to_led_0/mode_and]
+connect_bd_net [get_bd_pins adpt_in4_modes_0/mode_or] [get_bd_pins logic4_to_led_0/mode_or]
+connect_bd_net [get_bd_pins adpt_in4_modes_0/mode_xor] [get_bd_pins logic4_to_led_0/mode_xor]
+connect_bd_net [get_bd_pins cg_fpga_0/gpio_led] [get_bd_pins logic4_to_led_0/led]
+set_property location {2 124 0} [get_bd_cells adpt_in4_modes_0]
+set_property location {2 131 -228} [get_bd_cells adpt_in4_only_0]
+set_property location {2 153 -85} [get_bd_cells adpt_in4_modes_0]
+make_wrapper -files [get_files F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_2/design_2.bd] -top
+add_files -norecurse f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_2_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+close_design
+open_bd_design {F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd}
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_1_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1

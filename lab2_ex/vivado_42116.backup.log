@@ -1,0 +1,544 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Sep 21 10:46:25 2025
+# Process ID         : 42116
+# Current directory  : F:/Haoyang_Sun/experiments/lab2-ex
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent39084 F:\Haoyang_Sun\experiments\lab2-ex\lab2.xpr
+# Log file           : F:/Haoyang_Sun/experiments/lab2-ex/vivado.log
+# Journal file       : F:/Haoyang_Sun/experiments/lab2-ex\vivado.jou
+# Running On         : SKULL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 29775 MB
+# Available Virtual  : 14595 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Haoyang_Sun/experiments/lab2-ex/lab2.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24i\1.0\board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.2\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.3\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.4\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.0\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.1\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_mpsoc\1.0\board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_rfsoc\1.0\board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.3\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.4\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu104\1.1\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.4\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.5\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.6\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.2\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.3\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.4\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1275\1.0\board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1285\1.0\board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208\production\2.0\board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216\production\2.0\board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'F:/Haoyang_Sun/experiments/lab2' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.1 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24i\1.0\board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.2\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.3\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.4\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at E:/vivado/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/cg_fpga_slim_1_4'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/2025.1/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ design_1_xlconstant_0_0
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1732.016 ; gain = 255.305
+update_compile_order -fileset sources_1
+open_bd_design {F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- educg.net:user:cg_fpga:1.4 - cg_fpga_0
+Adding component instance block -- xilinx.com:module_ref:adpt_in:1.0 - adpt_in_0
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_0
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_0
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_1
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_1
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_2
+Adding component instance block -- xilinx.com:module_ref:or6:1.0 - or6_0
+Adding component instance block -- xilinx.com:module_ref:not1:1.0 - not1_0
+Adding component instance block -- xilinx.com:module_ref:not1:1.0 - not1_1
+Adding component instance block -- xilinx.com:module_ref:adpt_out:1.0 - adpt_out_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Successfully read diagram <design_1> from block design file <F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd>
+update_module_reference design_1_adpt_in_0_0
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'adpt_in'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "adpt_in" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'adpt_in'.
+ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_adpt_out_0_0 design_1_not1_0_0 design_1_and3_2_0 design_1_and2_0_0 design_1_not1_1_0 design_1_or6_0_0 design_1_and3_1_0 design_1_and3_0_0 design_1_and2_1_0}]
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'adpt_out'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "adpt_out" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'adpt_out'.
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'and2'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "and2" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'and2'.
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'and3'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "and3" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'and3'.
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'not1'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "not1" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'not1'.
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'or6'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "or6" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'or6'.
+ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.
+update_module_reference [get_ips  {design_1_adpt_out_0_0 design_1_not1_0_0 design_1_and3_2_0 design_1_and2_0_0 design_1_not1_1_0 design_1_or6_0_0 design_1_and3_1_0 design_1_and3_0_0 design_1_and2_1_0}]
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'adpt_out'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "adpt_out" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'adpt_out'.
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'and2'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "and2" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'and2'.
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'and3'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "and3" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'and3'.
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'not1'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "not1" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'not1'.
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'or6'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "or6" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'or6'.
+ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.
+update_module_reference [get_ips  {design_1_adpt_out_0_0 design_1_not1_0_0 design_1_and3_2_0 design_1_and2_0_0 design_1_not1_1_0 design_1_or6_0_0 design_1_and3_1_0 design_1_and3_0_0 design_1_and2_1_0}]
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'adpt_out'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "adpt_out" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'adpt_out'.
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'and2'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "and2" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'and2'.
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'and3'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "and3" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'and3'.
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'not1'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "not1" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'not1'.
+ERROR: [IP_Flow 19-264] [HDL Parser] No interface information is available for Verilog design unit 'or6'.
+ERROR: [IP_Flow 19-262] [HDL Parser] Failed to parse top module entity.  This can result from an empty entity or module declaration (i.e. no ports or parameters/generics).  Check that design unit "or6" of HDL file "f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v" is not empty.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'f:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'or6'.
+ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.
+update_module_reference [get_ips  {design_1_adpt_out_0_0 design_1_not1_0_0 design_1_and3_2_0 design_1_and2_0_0 design_1_not1_1_0 design_1_or6_0_0 design_1_and3_1_0 design_1_and3_0_0 design_1_and2_1_0}]
+WARNING: [Coretcl 2-1044] No upgrade is available for 'design_1_and2_0_0'
+WARNING: [Coretcl 2-1044] No upgrade is available for 'design_1_and2_1_0'
+WARNING: [Coretcl 2-1044] No upgrade is available for 'design_1_and3_0_0'
+WARNING: [Coretcl 2-1044] No upgrade is available for 'design_1_and3_1_0'
+WARNING: [Coretcl 2-1044] No upgrade is available for 'design_1_and3_2_0'
+WARNING: [Coretcl 2-1044] No upgrade is available for 'design_1_not1_0_0'
+WARNING: [Coretcl 2-1044] No upgrade is available for 'design_1_not1_1_0'
+WARNING: [Coretcl 2-1044] No upgrade is available for 'design_1_or6_0_0'
+Upgrading 'F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_out_0_0 to use current project options
+Wrote  : <F:\Haoyang_Sun\experiments\lab2-ex\lab2.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+generate_target all [get_files  F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <F:\Haoyang_Sun\experiments\lab2-ex\lab2.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_out_0 .
+INFO: [BD 41-1982] Skipping generation for the cell xlconstant_0, which is locked by user.
+Exporting to file f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_out_0_0_synth_1 -jobs 16
+[Sun Sep 21 10:54:05 2025] Launched design_1_adpt_out_0_0_synth_1...
+Run output will be captured here: F:/Haoyang_Sun/experiments/lab2/design_1_adpt_out_0_0_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/lab2-ex/lab2.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/lab2-ex/lab2.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/lab2-ex/lab2.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+create_bd_design "design_2"
+Wrote  : <F:\Haoyang_Sun\experiments\lab2-ex\lab2.srcs\sources_1\bd\design_2\design_2.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv educg.net:user:cg_fpga:1.4 cg_fpga_0
+endgroup
+update_module_reference [get_ips  design_1_adpt_out_0_0]
+Upgrading 'F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_out_0_0 to use current project options
+Wrote  : <F:\Haoyang_Sun\experiments\lab2-ex\lab2.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+current_bd_design [get_bd_designs design_1]
+generate_target all [get_files  F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <F:\Haoyang_Sun\experiments\lab2-ex\lab2.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_out_0 .
+INFO: [BD 41-1982] Skipping generation for the cell xlconstant_0, which is locked by user.
+Exporting to file f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_out_0_0_synth_1 -jobs 16
+[Sun Sep 21 11:00:01 2025] Launched design_1_adpt_out_0_0_synth_1...
+Run output will be captured here: F:/Haoyang_Sun/experiments/lab2/design_1_adpt_out_0_0_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/lab2-ex/lab2.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/lab2-ex/lab2.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/lab2-ex/lab2.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/lab2-ex/lab2.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+create_bd_cell -type module -reference logic4_to_led logic4_to_led_0
+delete_bd_objs [get_bd_cells logic4_to_led_0]
+current_bd_design [get_bd_designs design_2]
+close_bd_design [get_bd_designs design_2]
+Wrote  : <F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+open_bd_design {F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_2/design_2.bd}
+Reading block design file <F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_2/design_2.bd>...
+Successfully read diagram <design_2> from block design file <F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_2/design_2.bd>
+current_bd_design [get_bd_designs design_1]
+save_bd_design
+Wrote  : <F:\Haoyang_Sun\experiments\lab2-ex\lab2.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+close_bd_design [get_bd_designs design_1]
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/cg_fpga_slim_1_4'.
+startgroup
+create_bd_cell -type ip -vlnv educg.net:user:cg_fpga:1.4 cg_fpga_0
+endgroup
+set_property location {0.5 -85 -246} [get_bd_cells cg_fpga_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins cg_fpga_0/FIXED_IO]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins cg_fpga_0/DDR]
+endgroup
+create_bd_cell -type module -reference adpt_in4_only adpt_in4_only_0
+set_property location {1 -174 -243} [get_bd_cells cg_fpga_0]
+create_bd_cell -type module -reference adpt_in4_modes adpt_in4_modes_0
+create_bd_cell -type module -reference logic4_to_led logic4_to_led_0
+connect_bd_net [get_bd_pins cg_fpga_0/gpio_sw_2] [get_bd_pins adpt_in4_modes_0/sw2]
+set_property location {2 207 -142} [get_bd_cells adpt_in4_modes_0]
+set_property location {3 421 -151} [get_bd_cells adpt_in4_only_0]
+set_property location {3.5 711 -143} [get_bd_cells logic4_to_led_0]
+set_property location {3.5 595 -142} [get_bd_cells logic4_to_led_0]
+connect_bd_net [get_bd_pins cg_fpga_0/gpio_sw_1] [get_bd_pins adpt_in4_only_0/sw1]
+set_property location {2 136 -31} [get_bd_cells adpt_in4_modes_0]
+set_property location {2 163 -191} [get_bd_cells adpt_in4_only_0]
+set_property location {2 140 -80} [get_bd_cells adpt_in4_modes_0]
+set_property location {2 147 -224} [get_bd_cells adpt_in4_modes_0]
+set_property location {2 137 -201} [get_bd_cells adpt_in4_modes_0]
+connect_bd_net [get_bd_pins adpt_in4_modes_0/A] [get_bd_pins logic4_to_led_0/A]
+connect_bd_net [get_bd_pins adpt_in4_only_0/B] [get_bd_pins logic4_to_led_0/B]
+connect_bd_net [get_bd_pins adpt_in4_modes_0/mode_and] [get_bd_pins logic4_to_led_0/mode_and]
+connect_bd_net [get_bd_pins adpt_in4_modes_0/mode_or] [get_bd_pins logic4_to_led_0/mode_or]
+connect_bd_net [get_bd_pins adpt_in4_modes_0/mode_xor] [get_bd_pins logic4_to_led_0/mode_xor]
+connect_bd_net [get_bd_pins cg_fpga_0/gpio_led] [get_bd_pins logic4_to_led_0/led]
+set_property location {2 124 0} [get_bd_cells adpt_in4_modes_0]
+set_property location {2 131 -228} [get_bd_cells adpt_in4_only_0]
+set_property location {2 153 -85} [get_bd_cells adpt_in4_modes_0]
+make_wrapper -files [get_files F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_2/design_2.bd] -top
+Wrote  : <F:\Haoyang_Sun\experiments\lab2-ex\lab2.srcs\sources_1\bd\design_2\design_2.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_2/synth/design_2.v
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_2/sim/design_2.v
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v
+add_files -norecurse f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+Wrote  : <F:\Haoyang_Sun\experiments\lab2-ex\lab2.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1982] Skipping generation for the cell xlconstant_0, which is locked by user.
+Exporting to file f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_1/synth/design_1.hwdef
+[Sun Sep 21 11:08:07 2025] Launched synth_1...
+Run output will be captured here: F:/Haoyang_Sun/experiments/lab2-ex/synth_1/runme.log
+[Sun Sep 21 11:08:07 2025] Launched impl_1...
+Run output will be captured here: F:/Haoyang_Sun/experiments/lab2-ex/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 2145.582 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 138 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2275.582 ; gain = 4.523
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2891.906 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2891.906 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.279 . Memory (MB): peak = 2891.906 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2891.906 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 2891.906 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.377 . Memory (MB): peak = 2891.906 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.378 . Memory (MB): peak = 2891.906 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2891.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 3 instances
+  SRLC32E => SRL16E: 3 instances
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3310.262 ; gain = 1212.594
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+close_design
+set_property top design_2_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file F:/Haoyang_Sun/experiments/lab2-ex/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [BD 41-1662] The design 'design_2.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_2/synth/design_2.v
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_2/sim/design_2.v
+Verilog Output written to : f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_axi_gpio_0_0 (AXI GPIO 2.0) from revision 29 to revision 37
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_cg_fpga_axi_gpio_o1_0 (AXI GPIO 2.0) from revision 29 to revision 37
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_cg_fpga_axi_gpio_o1_1 (AXI GPIO 2.0) from revision 29 to revision 37
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_cg_fpga_axi_gpio_i1_0 (AXI GPIO 2.0) from revision 29 to revision 37
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_axi_uartlite_0_0 (AXI Uartlite 2.0) from revision 31 to revision 39
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_axi_intc_0_0 (AXI Interrupt Controller 4.1) from revision 17 to revision 21
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_rst_ps7_0_50M_0 (Processor System Reset 5.0) from revision 13 to revision 17
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xbar_1 (AXI Crossbar 2.1) from revision 28 to revision 37
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_auto_pc_0 (AXI Protocol Converter 2.1) from revision 27 to revision 36
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconcat_0_0 (Concat 2.1) from revision 4 to revision 7
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconcat_1_0 (Concat 2.1) from revision 4 to revision 7
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_v_vid_in_axi4s_0_0 (Video In to AXI4-Stream 5.0) from revision 2 to revision 6
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconcat_2_0 (Concat 2.1) from revision 4 to revision 7
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconcat_3_0 (Concat 2.1) from revision 4 to revision 7
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlslice_0_2 (Slice 1.0) from revision 2 to revision 5
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlslice_0_3 (Slice 1.0) from revision 2 to revision 5
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlslice_1_0 (Slice 1.0) from revision 2 to revision 5
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconstant_0_0 (Constant 1.1) from revision 7 to revision 10
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xbar_0 (AXI Crossbar 2.1) from revision 28 to revision 37
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_auto_pc_1 (AXI Protocol Converter 2.1) from revision 27 to revision 36
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_axi_vdma_0_0 (AXI Video Direct Memory Access 6.3) from revision 15 to revision 23
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_processing_system7_0_0 (ZYNQ7 Processing System 5.5) from revision 6 to revision 7
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconstant_1_0 (Constant 1.1) from revision 7 to revision 10
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconstant_1_1 (Constant 1.1) from revision 7 to revision 10
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cg_fpga_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_in4_only_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_in4_modes_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block logic4_to_led_0 .
+Exporting to file f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_2/hw_handoff/design_2.hwh
+Generated Hardware Definition File f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_2/synth/design_2.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_cg_fpga_0_0, cache-ID = 9cfdd376492e3c57; cache size = 15.849 MB.
+[Sun Sep 21 11:12:21 2025] Launched design_2_adpt_in4_modes_0_0_synth_1, design_2_logic4_to_led_0_0_synth_1, design_2_adpt_in4_only_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_2_adpt_in4_modes_0_0_synth_1: F:/Haoyang_Sun/experiments/lab2-ex/design_2_adpt_in4_modes_0_0_synth_1/runme.log
+design_2_logic4_to_led_0_0_synth_1: F:/Haoyang_Sun/experiments/lab2-ex/design_2_logic4_to_led_0_0_synth_1/runme.log
+design_2_adpt_in4_only_0_0_synth_1: F:/Haoyang_Sun/experiments/lab2-ex/design_2_adpt_in4_only_0_0_synth_1/runme.log
+synth_1: F:/Haoyang_Sun/experiments/lab2-ex/synth_1/runme.log
+[Sun Sep 21 11:12:21 2025] Launched impl_1...
+Run output will be captured here: F:/Haoyang_Sun/experiments/lab2-ex/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 3505.516 ; gain = 0.000
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 3505.516 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 138 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 3505.516 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3505.516 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3505.516 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.407 . Memory (MB): peak = 3505.516 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3505.516 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 3505.516 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.571 . Memory (MB): peak = 3505.516 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.572 . Memory (MB): peak = 3505.516 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3505.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 3 instances
+  SRLC32E => SRL16E: 3 instances
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 3697.930 ; gain = 192.414
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+close_design
+open_bd_design {F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- educg.net:user:cg_fpga:1.4 - cg_fpga_0
+Adding component instance block -- xilinx.com:module_ref:adpt_in:1.0 - adpt_in_0
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_0
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_0
+Adding component instance block -- xilinx.com:module_ref:and2:1.0 - and2_1
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_1
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_2
+Adding component instance block -- xilinx.com:module_ref:or6:1.0 - or6_0
+Adding component instance block -- xilinx.com:module_ref:not1:1.0 - not1_0
+Adding component instance block -- xilinx.com:module_ref:not1:1.0 - not1_1
+Adding component instance block -- xilinx.com:module_ref:adpt_out:1.0 - adpt_out_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Successfully read diagram <design_1> from block design file <F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_1/design_1.bd>
+set_property top design_1_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file F:/Haoyang_Sun/experiments/lab2-ex/synth_1/design_2_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Sep 21 11:40:00 2025] Launched synth_1...
+Run output will be captured here: F:/Haoyang_Sun/experiments/lab2-ex/synth_1/runme.log
+[Sun Sep 21 11:40:00 2025] Launched impl_1...
+Run output will be captured here: F:/Haoyang_Sun/experiments/lab2-ex/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.227 . Memory (MB): peak = 3916.281 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 138 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 3916.281 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3916.281 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3916.281 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.408 . Memory (MB): peak = 3916.281 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3916.281 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 3916.281 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.505 . Memory (MB): peak = 3916.281 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.505 . Memory (MB): peak = 3916.281 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3916.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 3 instances
+  SRLC32E => SRL16E: 3 instances
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3916.281 ; gain = 0.000
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 21 11:48:12 2025...

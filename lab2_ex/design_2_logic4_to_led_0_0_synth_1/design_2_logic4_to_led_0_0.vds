@@ -1,0 +1,244 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Sep 21 11:12:24 2025
+# Process ID         : 62124
+# Current directory  : F:/Haoyang_Sun/experiments/lab2-ex/design_2_logic4_to_led_0_0_synth_1
+# Command line       : vivado.exe -log design_2_logic4_to_led_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_logic4_to_led_0_0.tcl
+# Log file           : F:/Haoyang_Sun/experiments/lab2-ex/design_2_logic4_to_led_0_0_synth_1/design_2_logic4_to_led_0_0.vds
+# Journal file       : F:/Haoyang_Sun/experiments/lab2-ex/design_2_logic4_to_led_0_0_synth_1\vivado.jou
+# Running On         : SKULL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 29775 MB
+# Available Virtual  : 9966 MB
+#-----------------------------------------------------------
+source design_2_logic4_to_led_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/cg_fpga_slim_1_4'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/2025.1/Vivado/data/ip'.
+Command: synth_design -top design_2_logic4_to_led_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 58788
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1231.457 ; gain = 491.086
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_2_logic4_to_led_0_0' [f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_2/ip/design_2_logic4_to_led_0_0/synth/design_2_logic4_to_led_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'logic4_to_led' [F:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'logic4_to_led' (0#1) [F:/Haoyang_Sun/experiments/lab2-ex/exp2_source.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'design_2_logic4_to_led_0_0' (0#1) [f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_2/ip/design_2_logic4_to_led_0_0/synth/design_2_logic4_to_led_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1343.320 ; gain = 602.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1343.320 ; gain = 602.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1343.320 ; gain = 602.949
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1343.320 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1385.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1385.426 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1385.426 ; gain = 645.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1385.426 ; gain = 645.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1385.426 ; gain = 645.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1385.426 ; gain = 645.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[31] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[30] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[29] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[28] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[27] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[26] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[25] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[24] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[23] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[22] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[21] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[20] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[19] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[18] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[17] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[16] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[15] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[14] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[13] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[12] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[11] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[10] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[9] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[8] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[7] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[6] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[5] driven by constant 1
+INFO: [Synth 8-3917] design design_2_logic4_to_led_0_0 has port led[4] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1385.426 ; gain = 645.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1542.000 ; gain = 801.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1542.000 ; gain = 801.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1551.559 ; gain = 811.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1786.695 ; gain = 1046.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1786.695 ; gain = 1046.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1786.695 ; gain = 1046.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1786.695 ; gain = 1046.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1786.695 ; gain = 1046.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1786.695 ; gain = 1046.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT5 |     4|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1786.695 ; gain = 1046.324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1786.695 ; gain = 1004.219
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1786.695 ; gain = 1046.324
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1795.770 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1799.457 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7bcae079
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1799.457 ; gain = 1285.156
+INFO: [Common 17-1381] The checkpoint 'F:/Haoyang_Sun/experiments/lab2-ex/design_2_logic4_to_led_0_0_synth_1/design_2_logic4_to_led_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_2_logic4_to_led_0_0_utilization_synth.rpt -pb design_2_logic4_to_led_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 21 11:12:53 2025...

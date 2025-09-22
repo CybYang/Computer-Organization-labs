@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Sep 21 11:12:24 2025
+# Process ID         : 46492
+# Current directory  : F:/Haoyang_Sun/experiments/lab2-ex/design_2_adpt_in4_modes_0_0_synth_1
+# Command line       : vivado.exe -log design_2_adpt_in4_modes_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_adpt_in4_modes_0_0.tcl
+# Log file           : F:/Haoyang_Sun/experiments/lab2-ex/design_2_adpt_in4_modes_0_0_synth_1/design_2_adpt_in4_modes_0_0.vds
+# Journal file       : F:/Haoyang_Sun/experiments/lab2-ex/design_2_adpt_in4_modes_0_0_synth_1\vivado.jou
+# Running On         : SKULL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 29775 MB
+# Available Virtual  : 10000 MB
+#-----------------------------------------------------------
+source design_2_adpt_in4_modes_0_0.tcl -notrace

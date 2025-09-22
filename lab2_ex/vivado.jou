@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Sep 21 11:48:37 2025
+# Process ID         : 48268
+# Current directory  : F:/Haoyang_Sun/experiments/lab2-ex
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent23488 F:\Haoyang_Sun\experiments\lab2-ex\lab2.xpr
+# Log file           : F:/Haoyang_Sun/experiments/lab2-ex/vivado.log
+# Journal file       : F:/Haoyang_Sun/experiments/lab2-ex\vivado.jou
+# Running On         : SKULL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 29775 MB
+# Available Virtual  : 13598 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Haoyang_Sun/experiments/lab2-ex/lab2.xpr
+open_bd_design {F:/Haoyang_Sun/experiments/lab2-ex/lab2.srcs/sources_1/bd/design_2/design_2.bd}
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference adpt_in4_only adpt_in4_only_1
+set_property location {2 256 -502} [get_bd_cells adpt_in4_only_1]
+delete_bd_objs [get_bd_cells adpt_in4_only_1]
+save_bd_design

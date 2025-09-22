@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Sep 15 16:10:36 2025
+# Process ID         : 8176
+# Current directory  : F:/Haoyang_Sun/experiments/lab2
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent28828 F:\Haoyang_Sun\experiments\lab2\lab2.xpr
+# Log file           : F:/Haoyang_Sun/experiments/lab2/vivado.log
+# Journal file       : F:/Haoyang_Sun/experiments/lab2\vivado.jou
+# Running On         : SKULL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 29775 MB
+# Available Virtual  : 16632 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Haoyang_Sun/experiments/lab2/lab2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {F:/Haoyang_Sun/experiments/lab2/lab2.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+set_property location {4 703 316} [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins or6_0/f]
+make_wrapper -files [get_files F:/Haoyang_Sun/experiments/lab2/lab2.srcs/sources_1/bd/design_1/design_1.bd] -top
+make_wrapper -files [get_files F:/Haoyang_Sun/experiments/lab2/lab2.srcs/sources_1/bd/design_1/design_1.bd] -top
+create_ip -name cg_fpga -vendor educg.net -library user -version 1.4 -module_name cg_fpga_0
+generate_target {instantiation_template} [get_files f:/Haoyang_Sun/experiments/lab2/lab2.srcs/sources_1/ip/cg_fpga_0/cg_fpga_0.xci]
+update_compile_order -fileset sources_1
+remove_files  f:/Haoyang_Sun/experiments/lab2/lab2.srcs/sources_1/ip/cg_fpga_0/cg_fpga_0.xci
+remove_files  F:/Haoyang_Sun/experiments/lab2/lab2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper -files [get_files F:/Haoyang_Sun/experiments/lab2/lab2.srcs/sources_1/bd/design_1/design_1.bd] -top
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv educg.net:user:cg_fpga:1.4 cg_fpga_1
+endgroup
+set_property location {1 -160 -24} [get_bd_cells cg_fpga_1]
+set_property location {1 -112 208} [get_bd_cells cg_fpga_1]
+undo
+undo
+undo
+set_property location {1 -156 -176} [get_bd_cells cg_fpga_0]

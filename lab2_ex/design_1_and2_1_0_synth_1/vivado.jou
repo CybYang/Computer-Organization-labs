@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Sep 15 17:40:01 2025
+# Process ID         : 25384
+# Current directory  : F:/Haoyang_Sun/experiments/lab2/design_1_and2_1_0_synth_1
+# Command line       : vivado.exe -log design_1_and2_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_and2_1_0.tcl
+# Log file           : F:/Haoyang_Sun/experiments/lab2/design_1_and2_1_0_synth_1/design_1_and2_1_0.vds
+# Journal file       : F:/Haoyang_Sun/experiments/lab2/design_1_and2_1_0_synth_1\vivado.jou
+# Running On         : SKULL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 29775 MB
+# Available Virtual  : 12165 MB
+#-----------------------------------------------------------
+source design_1_and2_1_0.tcl -notrace

@@ -1,0 +1,124 @@
+-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+-- Date        : Sun Sep 21 11:12:53 2025
+-- Host        : SKULL running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim
+--               f:/Haoyang_Sun/experiments/lab2-ex/lab2.gen/sources_1/bd/design_2/ip/design_2_adpt_in4_modes_0_0/design_2_adpt_in4_modes_0_0_sim_netlist.vhdl
+-- Design      : design_2_adpt_in4_modes_0_0
+-- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
+--               synthesized. This netlist cannot be used for SDF annotated simulation.
+-- Device      : xc7z020clg400-1
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity design_2_adpt_in4_modes_0_0_adpt_in4_modes is
+  port (
+    A : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    mode_xor : out STD_LOGIC;
+    mode_or : out STD_LOGIC;
+    mode_and : out STD_LOGIC;
+    sw2 : in STD_LOGIC_VECTOR ( 6 downto 0 )
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_2_adpt_in4_modes_0_0_adpt_in4_modes : entity is "adpt_in4_modes";
+end design_2_adpt_in4_modes_0_0_adpt_in4_modes;
+
+architecture STRUCTURE of design_2_adpt_in4_modes_0_0_adpt_in4_modes is
+begin
+\A[0]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => sw2(0),
+      O => A(0)
+    );
+\A[1]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => sw2(1),
+      O => A(1)
+    );
+\A[2]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => sw2(2),
+      O => A(2)
+    );
+\A[3]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => sw2(3),
+      O => A(3)
+    );
+mode_and_INST_0: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => sw2(6),
+      O => mode_and
+    );
+mode_or_INST_0: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => sw2(5),
+      O => mode_or
+    );
+mode_xor_INST_0: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => sw2(4),
+      O => mode_xor
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity design_2_adpt_in4_modes_0_0 is
+  port (
+    sw2 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    A : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    mode_and : out STD_LOGIC;
+    mode_or : out STD_LOGIC;
+    mode_xor : out STD_LOGIC
+  );
+  attribute NotValidForBitStream : boolean;
+  attribute NotValidForBitStream of design_2_adpt_in4_modes_0_0 : entity is true;
+  attribute CHECK_LICENSE_TYPE : string;
+  attribute CHECK_LICENSE_TYPE of design_2_adpt_in4_modes_0_0 : entity is "design_2_adpt_in4_modes_0_0,adpt_in4_modes,{}";
+  attribute DowngradeIPIdentifiedWarnings : string;
+  attribute DowngradeIPIdentifiedWarnings of design_2_adpt_in4_modes_0_0 : entity is "yes";
+  attribute IP_DEFINITION_SOURCE : string;
+  attribute IP_DEFINITION_SOURCE of design_2_adpt_in4_modes_0_0 : entity is "module_ref";
+  attribute X_CORE_INFO : string;
+  attribute X_CORE_INFO of design_2_adpt_in4_modes_0_0 : entity is "adpt_in4_modes,Vivado 2025.1";
+end design_2_adpt_in4_modes_0_0;
+
+architecture STRUCTURE of design_2_adpt_in4_modes_0_0 is
+begin
+inst: entity work.design_2_adpt_in4_modes_0_0_adpt_in4_modes
+     port map (
+      A(3 downto 0) => A(3 downto 0),
+      mode_and => mode_and,
+      mode_or => mode_or,
+      mode_xor => mode_xor,
+      sw2(6 downto 4) => sw2(10 downto 8),
+      sw2(3 downto 0) => sw2(3 downto 0)
+    );
+end STRUCTURE;
