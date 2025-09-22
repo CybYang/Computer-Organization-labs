@@ -1,0 +1,203 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Sep 22 10:53:21 2025
+# Process ID         : 8420
+# Current directory  : D:/vivadoRepo/lab3
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent8088 D:\vivadoRepo\lab3\lab3.xpr
+# Log file           : D:/vivadoRepo/lab3/vivado.log
+# Journal file       : D:/vivadoRepo/lab3\vivado.jou
+# Running On         : vj5PC49
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19042
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12600
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16853 MB
+# Swap memory        : 1342 MB
+# Total Virtual      : 18195 MB
+# Available Virtual  : 14129 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadoRepo/lab3/lab3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivadoRepo/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivadoRepo/cg_fpga_slim_1_4'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_cg_fpga_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_cg_fpga_0_0/design_1_cg_fpga_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_cg_fpga_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_cg_fpga_0_0/design_1_cg_fpga_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_cg_fpga_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_cg_fpga_0_0/design_1_cg_fpga_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_cg_fpga_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_cg_fpga_0_0/design_1_cg_fpga_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_cg_fpga_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_cg_fpga_0_0/design_1_cg_fpga_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_adpt_out_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_adpt_out_0_0/design_1_adpt_out_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_adpt_out_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_adpt_out_0_0/design_1_adpt_out_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_adpt_out_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_adpt_out_0_0/design_1_adpt_out_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_adpt_out_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_adpt_out_0_0/design_1_adpt_out_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_adpt_out_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_adpt_out_0_0/design_1_adpt_out_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_not0_0_1' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_not0_0_1/design_1_not0_0_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_not0_0_1' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_not0_0_1/design_1_not0_0_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_not0_0_1' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_not0_0_1/design_1_not0_0_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_not0_0_1' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_not0_0_1/design_1_not0_0_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_not0_0_1' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_not0_0_1/design_1_not0_0_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_1_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_1_0/design_1_and3_1_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_1_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_1_0/design_1_and3_1_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_1_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_1_0/design_1_and3_1_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_1_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_1_0/design_1_and3_1_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_1_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_1_0/design_1_and3_1_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_0_0/design_1_or4_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_0_0/design_1_or4_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_0_0/design_1_or4_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_0_0/design_1_or4_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_0_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_0_0/design_1_or4_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_2_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_2_0/design_1_and3_2_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_2_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_2_0/design_1_and3_2_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_2_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_2_0/design_1_and3_2_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_2_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_2_0/design_1_and3_2_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_2_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_2_0/design_1_and3_2_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_3_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_3_0/design_1_and3_3_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_3_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_3_0/design_1_and3_3_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_3_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_3_0/design_1_and3_3_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_3_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_3_0/design_1_and3_3_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_3_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_3_0/design_1_and3_3_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_5_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_5_0/design_1_and3_5_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_5_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_5_0/design_1_and3_5_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_5_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_5_0/design_1_and3_5_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_5_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_5_0/design_1_and3_5_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_5_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_5_0/design_1_and3_5_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_7_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_7_0/design_1_and3_7_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_7_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_7_0/design_1_and3_7_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_7_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_7_0/design_1_and3_7_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_7_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_7_0/design_1_and3_7_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_7_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_7_0/design_1_and3_7_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_1_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_1_0/design_1_or4_1_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_1_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_1_0/design_1_or4_1_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_1_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_1_0/design_1_or4_1_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_1_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_1_0/design_1_or4_1_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_1_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_1_0/design_1_or4_1_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_2_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_2_0/design_1_or4_2_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_2_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_2_0/design_1_or4_2_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_2_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_2_0/design_1_or4_2_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_2_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_2_0/design_1_or4_2_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_or4_2_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_or4_2_0/design_1_or4_2_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_9_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_9_0/design_1_and3_9_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_9_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_9_0/design_1_and3_9_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_9_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_9_0/design_1_and3_9_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_9_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_9_0/design_1_and3_9_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_9_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_9_0/design_1_and3_9_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_12_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_12_0/design_1_and3_12_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_12_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_12_0/design_1_and3_12_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_12_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_12_0/design_1_and3_12_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_12_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_12_0/design_1_and3_12_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_12_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_12_0/design_1_and3_12_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_15_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_15_0/design_1_and3_15_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_15_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_15_0/design_1_and3_15_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_15_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_15_0/design_1_and3_15_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_15_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_15_0/design_1_and3_15_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_and3_15_0' generated file not found 'd:/vivadoRepo/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_and3_15_0/design_1_and3_15_0_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1335.016 ; gain = 236.156
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run design_1_or4_2_0_synth_1
+reset_run design_1_cg_fpga_0_0_synth_1
+reset_run design_1_and3_3_0_synth_1
+reset_run design_1_and3_1_0_synth_1
+reset_run design_1_and3_9_0_synth_1
+reset_run design_1_not0_0_1_synth_1
+reset_run design_1_and3_2_0_synth_1
+reset_run design_1_adpt_out_0_0_synth_1
+reset_run design_1_and3_7_0_synth_1
+reset_run design_1_and3_5_0_synth_1
+reset_run design_1_or4_0_0_synth_1
+reset_run design_1_or4_1_0_synth_1
+reset_run design_1_and3_12_0_synth_1
+reset_run design_1_and3_15_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_cg_fpga_0_0
+[Mon Sep 22 10:55:29 2025] Launched design_1_or4_2_0_synth_1, design_1_cg_fpga_0_0_synth_1, design_1_and3_3_0_synth_1, design_1_and3_1_0_synth_1, design_1_and3_9_0_synth_1, design_1_not0_0_1_synth_1, design_1_and3_2_0_synth_1, design_1_adpt_out_0_0_synth_1, design_1_and3_7_0_synth_1, design_1_and3_5_0_synth_1, design_1_or4_0_0_synth_1, design_1_or4_1_0_synth_1, design_1_and3_12_0_synth_1, design_1_and3_15_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_or4_2_0_synth_1: D:/vivadoRepo/lab3/design_1_or4_2_0_synth_1/runme.log
+design_1_cg_fpga_0_0_synth_1: D:/vivadoRepo/lab3/design_1_cg_fpga_0_0_synth_1/runme.log
+design_1_and3_3_0_synth_1: D:/vivadoRepo/lab3/design_1_and3_3_0_synth_1/runme.log
+design_1_and3_1_0_synth_1: D:/vivadoRepo/lab3/design_1_and3_1_0_synth_1/runme.log
+design_1_and3_9_0_synth_1: D:/vivadoRepo/lab3/design_1_and3_9_0_synth_1/runme.log
+design_1_not0_0_1_synth_1: D:/vivadoRepo/lab3/design_1_not0_0_1_synth_1/runme.log
+design_1_and3_2_0_synth_1: D:/vivadoRepo/lab3/design_1_and3_2_0_synth_1/runme.log
+design_1_adpt_out_0_0_synth_1: D:/vivadoRepo/lab3/design_1_adpt_out_0_0_synth_1/runme.log
+design_1_and3_7_0_synth_1: D:/vivadoRepo/lab3/design_1_and3_7_0_synth_1/runme.log
+design_1_and3_5_0_synth_1: D:/vivadoRepo/lab3/design_1_and3_5_0_synth_1/runme.log
+design_1_or4_0_0_synth_1: D:/vivadoRepo/lab3/design_1_or4_0_0_synth_1/runme.log
+design_1_or4_1_0_synth_1: D:/vivadoRepo/lab3/design_1_or4_1_0_synth_1/runme.log
+design_1_and3_12_0_synth_1: D:/vivadoRepo/lab3/design_1_and3_12_0_synth_1/runme.log
+design_1_and3_15_0_synth_1: D:/vivadoRepo/lab3/design_1_and3_15_0_synth_1/runme.log
+synth_1: D:/vivadoRepo/lab3/synth_1/runme.log
+[Mon Sep 22 10:55:30 2025] Launched impl_1...
+Run output will be captured here: D:/vivadoRepo/lab3/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.263 . Memory (MB): peak = 1655.094 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 117 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1784.625 ; gain = 4.137
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2401.879 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2401.879 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.287 . Memory (MB): peak = 2401.879 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2401.879 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2401.879 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.378 . Memory (MB): peak = 2401.879 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.378 . Memory (MB): peak = 2401.879 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2401.879 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 3 instances
+  SRLC32E => SRL16E: 3 instances
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2849.914 ; gain = 1429.520
+open_report: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2893.363 ; gain = 35.234
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+close_design
+open_bd_design {D:/vivadoRepo/lab3/lab3.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/vivadoRepo/lab3/lab3.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- educg.net:user:cg_fpga:1.4 - cg_fpga_0
+Adding component instance block -- xilinx.com:module_ref:adpt_in:1.0 - adpt_in_0
+Adding component instance block -- xilinx.com:module_ref:adpt_out:1.0 - adpt_out_0
+Adding component instance block -- xilinx.com:module_ref:not0:1.0 - not0_0
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_0
+Adding component instance block -- xilinx.com:module_ref:not0:1.0 - not0_1
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_1
+Adding component instance block -- xilinx.com:module_ref:or4:1.0 - or4_0
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_2
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_3
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_4
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_5
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_6
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_7
+Adding component instance block -- xilinx.com:module_ref:or4:1.0 - or4_1
+Adding component instance block -- xilinx.com:module_ref:or4:1.0 - or4_2
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_8
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_9
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_10
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_11
+Adding component instance block -- xilinx.com:module_ref:or4:1.0 - or4_3
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_12
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_13
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_14
+Adding component instance block -- xilinx.com:module_ref:and3:1.0 - and3_15
+Successfully read diagram <design_1> from block design file <D:/vivadoRepo/lab3/lab3.srcs/sources_1/bd/design_1/design_1.bd>
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 22 11:26:56 2025...
