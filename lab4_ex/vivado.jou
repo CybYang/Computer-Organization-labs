@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Sep 29 11:57:26 2025
+# Process ID         : 12832
+# Current directory  : D:/vivadoRepo/lab4
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent3608 D:\vivadoRepo\lab4\lab4.xpr
+# Log file           : D:/vivadoRepo/lab4/vivado.log
+# Journal file       : D:/vivadoRepo/lab4\vivado.jou
+# Running On         : vj5PC50
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19042
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12600
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16853 MB
+# Swap memory        : 1342 MB
+# Total Virtual      : 18195 MB
+# Available Virtual  : 11686 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadoRepo/lab4/lab4.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run design_1_and4_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run impl_1
+close_design
+open_bd_design {D:/vivadoRepo/lab4/lab4.srcs/sources_1/bd/design_1/design_1.bd}
