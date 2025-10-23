@@ -1,0 +1,42 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.804731",
+   "Default View_TopLeft":"-1381,-353",
+   "DisplayPinsOfHiddenNets":"1",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port FIXED_IO_0 -pg 1 -lvl 6 -x 20 -y -230 -defaultsOSRD
+preplace port DDR_0 -pg 1 -lvl 6 -x 20 -y -210 -defaultsOSRD
+preplace inst cg_fpga_0 -pg 1 -lvl 1 -x -1220 -y 0 -defaultsOSRD
+preplace inst adpt_in_0 -pg 1 -lvl 2 -x -940 -y -80 -defaultsOSRD
+preplace inst adpt_out_0 -pg 1 -lvl 5 -x -160 -y -80 -defaultsOSRD
+preplace inst m74161_0 -pg 1 -lvl 3 -x -710 -y -70 -defaultsOSRD
+preplace inst BCD7SEG_0 -pg 1 -lvl 4 -x -410 -y -80 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x -940 -y 70 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 2 -x -940 -y 180 -defaultsOSRD
+preplace inst single_4_to_bus_0 -pg 1 -lvl 4 -x -410 -y -210 -defaultsOSRD
+preplace inst mod10_control_0 -pg 1 -lvl 4 -x -410 -y 60 -defaultsOSRD
+preplace netloc cg_fpga_0_btn_rst 1 1 1 -1040 -60n
+preplace netloc cg_fpga_0_btn_clk 1 1 1 -1060 -80n
+preplace netloc cg_fpga_0_gpio_sw_2 1 1 1 -1050 -100n
+preplace netloc adpt_in_0_clk 1 2 1 -830 -150n
+preplace netloc BCD7SEG_0_LED7S 1 4 1 N -80
+preplace netloc xlconstant_0_dout 1 2 1 -820 -110n
+preplace netloc xlconstant_1_dout 1 2 1 -810 -50n
+preplace netloc m74161_0_Q3 1 3 1 -560 -240n
+preplace netloc m74161_0_Q2 1 3 1 -550 -220n
+preplace netloc m74161_0_Q1 1 3 1 -540 -200n
+preplace netloc single_4_to_bus_0_o 1 3 2 -520 -300 -300
+preplace netloc m74161_0_Q0 1 3 1 -530 -180n
+preplace netloc adpt_in_0_rst 1 2 2 -840J -210 -610
+preplace netloc mod10_control_0_clear_signal 1 2 3 -810 -220 -570J -310 -290
+preplace netloc adpt_out_0_seg_cs 1 0 6 -1370 -250 NJ -250 NJ -250 -600J -340 NJ -340 -30
+preplace netloc adpt_out_0_seg_data 1 0 6 -1360 -240 NJ -240 NJ -240 -590J -330 NJ -330 -20
+preplace netloc cg_fpga_0_FIXED_IO 1 1 5 -1070J -230 NJ -230 -580 -320 NJ -320 -10J
+preplace netloc cg_fpga_0_DDR 1 1 5 -1080J -260 NJ -260 -610 -350 NJ -350 0J
+levelinfo -pg 1 -1390 -1220 -940 -710 -410 -160 20
+pagesize -pg 1 -db -bbox -sgen -1460 -410 360 420
+"
+}
+
