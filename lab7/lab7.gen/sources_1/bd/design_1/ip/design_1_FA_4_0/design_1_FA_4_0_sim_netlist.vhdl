@@ -1,0 +1,85 @@
+-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+-- Date        : Mon Oct 27 10:25:53 2025
+-- Host        : vj5PC50 running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim
+--               d:/vivadoRepo/lab7/lab7.gen/sources_1/bd/design_1/ip/design_1_FA_4_0/design_1_FA_4_0_sim_netlist.vhdl
+-- Design      : design_1_FA_4_0
+-- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
+--               synthesized. This netlist cannot be used for SDF annotated simulation.
+-- Device      : xc7z020clg400-1
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity design_1_FA_4_0_FA is
+  port (
+    Cout : out STD_LOGIC;
+    Cin : in STD_LOGIC;
+    B : in STD_LOGIC;
+    A : in STD_LOGIC
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_FA_4_0_FA : entity is "FA";
+end design_1_FA_4_0_FA;
+
+architecture STRUCTURE of design_1_FA_4_0_FA is
+begin
+\Cout__0\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"E8"
+    )
+        port map (
+      I0 => Cin,
+      I1 => B,
+      I2 => A,
+      O => Cout
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity design_1_FA_4_0 is
+  port (
+    A : in STD_LOGIC;
+    B : in STD_LOGIC;
+    Cin : in STD_LOGIC;
+    Sum : out STD_LOGIC;
+    Cout : out STD_LOGIC
+  );
+  attribute NotValidForBitStream : boolean;
+  attribute NotValidForBitStream of design_1_FA_4_0 : entity is true;
+  attribute CHECK_LICENSE_TYPE : string;
+  attribute CHECK_LICENSE_TYPE of design_1_FA_4_0 : entity is "design_1_FA_4_0,FA,{}";
+  attribute DowngradeIPIdentifiedWarnings : string;
+  attribute DowngradeIPIdentifiedWarnings of design_1_FA_4_0 : entity is "yes";
+  attribute IP_DEFINITION_SOURCE : string;
+  attribute IP_DEFINITION_SOURCE of design_1_FA_4_0 : entity is "module_ref";
+  attribute X_CORE_INFO : string;
+  attribute X_CORE_INFO of design_1_FA_4_0 : entity is "FA,Vivado 2024.2";
+end design_1_FA_4_0;
+
+architecture STRUCTURE of design_1_FA_4_0 is
+begin
+Sum_INST_0: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"96"
+    )
+        port map (
+      I0 => Cin,
+      I1 => A,
+      I2 => B,
+      O => Sum
+    );
+inst: entity work.design_1_FA_4_0_FA
+     port map (
+      A => A,
+      B => B,
+      Cin => Cin,
+      Cout => Cout
+    );
+end STRUCTURE;

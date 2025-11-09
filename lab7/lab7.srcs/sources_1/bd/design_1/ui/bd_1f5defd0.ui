@@ -1,0 +1,82 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.899319",
+   "Default View_TopLeft":"-580,16",
+   "DisplayPinsOfHiddenNets":"1",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port FIXED_IO_0 -pg 1 -lvl 8 -x 1510 -y -300 -defaultsOSRD
+preplace port DDR_0 -pg 1 -lvl 8 -x 1510 -y -280 -defaultsOSRD
+preplace inst cg_fpga_0 -pg 1 -lvl 1 -x -430 -y -70 -defaultsOSRD
+preplace inst adpt_in_0 -pg 1 -lvl 2 -x -90 -y 150 -defaultsOSRD
+preplace inst FA_0 -pg 1 -lvl 5 -x 740 -y 0 -defaultsOSRD
+preplace inst xor2_0 -pg 1 -lvl 3 -x 220 -y 370 -defaultsOSRD
+preplace inst xor2_1 -pg 1 -lvl 3 -x 220 -y 250 -defaultsOSRD
+preplace inst xor2_2 -pg 1 -lvl 3 -x 220 -y 130 -defaultsOSRD
+preplace inst xor2_3 -pg 1 -lvl 3 -x 220 -y 0 -defaultsOSRD
+preplace inst xor2_4 -pg 1 -lvl 4 -x 430 -y 370 -defaultsOSRD
+preplace inst xor2_5 -pg 1 -lvl 4 -x 430 -y 250 -defaultsOSRD
+preplace inst xor2_6 -pg 1 -lvl 4 -x 430 -y 130 -defaultsOSRD
+preplace inst xor2_7 -pg 1 -lvl 4 -x 430 -y 0 -defaultsOSRD
+preplace inst adpt_out_0 -pg 1 -lvl 7 -x 1360 -y 180 -defaultsOSRD
+preplace inst FA_1 -pg 1 -lvl 5 -x 740 -y 140 -defaultsOSRD
+preplace inst FA_2 -pg 1 -lvl 5 -x 740 -y 280 -defaultsOSRD
+preplace inst FA_3 -pg 1 -lvl 5 -x 740 -y 420 -defaultsOSRD
+preplace inst FA_4 -pg 1 -lvl 6 -x 1080 -y -10 -defaultsOSRD
+preplace inst FA_5 -pg 1 -lvl 6 -x 1080 -y 130 -defaultsOSRD
+preplace inst FA_6 -pg 1 -lvl 6 -x 1080 -y 280 -defaultsOSRD
+preplace inst FA_7 -pg 1 -lvl 6 -x 1080 -y 420 -defaultsOSRD
+preplace inst xor2_8 -pg 1 -lvl 7 -x 1360 -y 420 -defaultsOSRD
+preplace netloc cg_fpga_0_gpio_sw_2 1 1 1 -290 -10n
+preplace netloc adpt_in_0_K 1 2 2 150 -80 330
+preplace netloc adpt_in_0_B0 1 2 1 80 280n
+preplace netloc adpt_in_0_B1 1 2 1 130 240n
+preplace netloc adpt_in_0_B3 1 2 1 100 -10n
+preplace netloc adpt_in_0_B4 1 2 2 40J 450 300
+preplace netloc adpt_in_0_B5 1 2 2 90J 440 290
+preplace netloc adpt_in_0_B6 1 2 2 60J 460 360
+preplace netloc adpt_in_0_B7 1 2 2 90J -70 290
+preplace netloc xor2_0_y 1 3 2 350 -70 570J
+preplace netloc adpt_in_0_A0 1 2 3 20 510 NJ 510 580J
+preplace netloc adpt_in_0_C0 1 2 3 10 480 NJ 480 540J
+preplace netloc FA_0_Sum 1 5 2 920 500 1240
+preplace netloc FA_0_Cout 1 4 2 650 500 850
+preplace netloc xor2_1_y 1 3 2 310 440 530J
+preplace netloc adpt_in_0_A1 1 2 3 30J 500 NJ 500 600
+preplace netloc FA_1_Sum 1 5 2 860 510 1230
+preplace netloc FA_1_Cout 1 4 2 640 510 840
+preplace netloc adpt_in_0_A2 1 2 3 70J 490 NJ 490 610
+preplace netloc FA_2_Sum 1 5 2 900 520 1220
+preplace netloc FA_2_Cout 1 4 2 630 540 830
+preplace netloc adpt_in_0_A3 1 2 3 110J 470 NJ 470 620
+preplace netloc adpt_in_0_B2 1 2 1 120 120n
+preplace netloc xor2_2_y 1 3 2 320J 450 590
+preplace netloc xor2_3_y 1 3 2 340J -80 550
+preplace netloc FA_3_Sum 1 5 2 890 530 1210
+preplace netloc FA_3_Cout 1 5 1 910 10n
+preplace netloc xor2_4_y 1 4 2 500 -90 960J
+preplace netloc adpt_in_0_A4 1 2 4 20 -120 NJ -120 NJ -120 980J
+preplace netloc FA_4_Sum 1 6 1 1240 -20n
+preplace netloc FA_4_Cout 1 5 2 990 -90 1170
+preplace netloc adpt_in_0_A5 1 2 4 50 550 NJ 550 NJ 550 940J
+preplace netloc xor2_5_y 1 4 2 510 530 870J
+preplace netloc FA_5_Sum 1 6 1 1190 120n
+preplace netloc FA_5_Cout 1 5 2 990 540 1170
+preplace netloc adpt_in_0_A6 1 2 4 30J -110 NJ -110 NJ -110 970
+preplace netloc xor2_6_y 1 4 2 520J 520 880
+preplace netloc FA_6_Sum 1 6 1 1200 120n
+preplace netloc FA_6_Cout 1 5 2 970 550 1190
+preplace netloc adpt_in_0_A7 1 2 4 50J -100 NJ -100 NJ -100 950
+preplace netloc xor2_7_y 1 4 2 560J -80 930
+preplace netloc FA_7_Sum 1 6 1 1180 100n
+preplace netloc FA_7_Cout 1 6 1 N 430
+preplace netloc xor2_8_y 1 6 2 1250 40 1470
+preplace netloc adpt_out_0_led 1 0 8 -570 -260 NJ -260 NJ -260 NJ -260 NJ -260 NJ -260 NJ -260 1480
+preplace netloc cg_fpga_0_FIXED_IO 1 1 7 -290 -300 N -300 N -300 N -300 N -300 N -300 N
+preplace netloc cg_fpga_0_DDR 1 1 7 -280 -280 N -280 N -280 N -280 N -280 N -280 N
+levelinfo -pg 1 -600 -430 -90 220 430 740 1080 1360 1510
+pagesize -pg 1 -db -bbox -sgen -600 -520 1640 560
+"
+}
+

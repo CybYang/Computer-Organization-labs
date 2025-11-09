@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_and2_8_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_8_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_9_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_9_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_6_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_6_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_7_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_3_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_0_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_1_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_2_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_15_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_15_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_13_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_13_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_12_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_12_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_11_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_11_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_14_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_14_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_10_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_adpt_out_0_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_adpt_out_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_1_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_0_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_4_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_5_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_2_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_and2_3_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_and2_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_adpt_in_0_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_adpt_in_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_3_4_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_3_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_0_4_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_0_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_2_4_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_2_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_1_4_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_1_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_cg_fpga_0_0_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_cg_fpga_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_1_3_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_1_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_2_2_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_2_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_3_3_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_3_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_2_3_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_2_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_0_3_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_0_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_3_2_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_3_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_0_2_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FA_1_2_synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/design_1_FA_1_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/vivadoRepo/lab8_ex/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_and2_8_0_synth_1"/>
+		<Parent Id="design_1_and2_9_0_synth_1"/>
+		<Parent Id="design_1_and2_6_0_synth_1"/>
+		<Parent Id="design_1_and2_7_0_synth_1"/>
+		<Parent Id="design_1_FA_3_0_synth_1"/>
+		<Parent Id="design_1_FA_0_0_synth_1"/>
+		<Parent Id="design_1_FA_1_0_synth_1"/>
+		<Parent Id="design_1_FA_2_0_synth_1"/>
+		<Parent Id="design_1_and2_15_0_synth_1"/>
+		<Parent Id="design_1_and2_13_0_synth_1"/>
+		<Parent Id="design_1_and2_12_0_synth_1"/>
+		<Parent Id="design_1_and2_11_0_synth_1"/>
+		<Parent Id="design_1_and2_14_0_synth_1"/>
+		<Parent Id="design_1_and2_10_0_synth_1"/>
+		<Parent Id="design_1_adpt_out_0_0_synth_1"/>
+		<Parent Id="design_1_and2_1_0_synth_1"/>
+		<Parent Id="design_1_and2_0_0_synth_1"/>
+		<Parent Id="design_1_and2_4_0_synth_1"/>
+		<Parent Id="design_1_and2_5_0_synth_1"/>
+		<Parent Id="design_1_and2_2_0_synth_1"/>
+		<Parent Id="design_1_and2_3_0_synth_1"/>
+		<Parent Id="design_1_adpt_in_0_0_synth_1"/>
+		<Parent Id="design_1_FA_3_4_synth_1"/>
+		<Parent Id="design_1_FA_0_4_synth_1"/>
+		<Parent Id="design_1_FA_2_4_synth_1"/>
+		<Parent Id="design_1_FA_1_4_synth_1"/>
+		<Parent Id="design_1_cg_fpga_0_0_synth_1"/>
+		<Parent Id="design_1_FA_1_3_synth_1"/>
+		<Parent Id="design_1_FA_2_2_synth_1"/>
+		<Parent Id="design_1_FA_3_3_synth_1"/>
+		<Parent Id="design_1_FA_2_3_synth_1"/>
+		<Parent Id="design_1_FA_0_3_synth_1"/>
+		<Parent Id="design_1_FA_3_2_synth_1"/>
+		<Parent Id="design_1_FA_0_2_synth_1"/>
+		<Parent Id="design_1_FA_1_2_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/vivadoRepo/lab8_ex/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="design_1_and2_8_0_synth_1"/>
+		<Parent Id="design_1_and2_9_0_synth_1"/>
+		<Parent Id="design_1_and2_6_0_synth_1"/>
+		<Parent Id="design_1_and2_7_0_synth_1"/>
+		<Parent Id="design_1_FA_3_0_synth_1"/>
+		<Parent Id="design_1_FA_0_0_synth_1"/>
+		<Parent Id="design_1_FA_1_0_synth_1"/>
+		<Parent Id="design_1_FA_2_0_synth_1"/>
+		<Parent Id="design_1_and2_15_0_synth_1"/>
+		<Parent Id="design_1_and2_13_0_synth_1"/>
+		<Parent Id="design_1_and2_12_0_synth_1"/>
+		<Parent Id="design_1_and2_11_0_synth_1"/>
+		<Parent Id="design_1_and2_14_0_synth_1"/>
+		<Parent Id="design_1_and2_10_0_synth_1"/>
+		<Parent Id="design_1_adpt_out_0_0_synth_1"/>
+		<Parent Id="design_1_and2_1_0_synth_1"/>
+		<Parent Id="design_1_and2_0_0_synth_1"/>
+		<Parent Id="design_1_and2_4_0_synth_1"/>
+		<Parent Id="design_1_and2_5_0_synth_1"/>
+		<Parent Id="design_1_and2_2_0_synth_1"/>
+		<Parent Id="design_1_and2_3_0_synth_1"/>
+		<Parent Id="design_1_adpt_in_0_0_synth_1"/>
+		<Parent Id="design_1_FA_3_4_synth_1"/>
+		<Parent Id="design_1_FA_0_4_synth_1"/>
+		<Parent Id="design_1_FA_2_4_synth_1"/>
+		<Parent Id="design_1_FA_1_4_synth_1"/>
+		<Parent Id="design_1_cg_fpga_0_0_synth_1"/>
+		<Parent Id="design_1_FA_1_3_synth_1"/>
+		<Parent Id="design_1_FA_2_2_synth_1"/>
+		<Parent Id="design_1_FA_3_3_synth_1"/>
+		<Parent Id="design_1_FA_2_3_synth_1"/>
+		<Parent Id="design_1_FA_0_3_synth_1"/>
+		<Parent Id="design_1_FA_3_2_synth_1"/>
+		<Parent Id="design_1_FA_0_2_synth_1"/>
+		<Parent Id="design_1_FA_1_2_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+
