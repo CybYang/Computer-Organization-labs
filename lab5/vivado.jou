@@ -1,0 +1,576 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Nov 30 15:55:42 2025
+# Process ID         : 27444
+# Current directory  : F:/Haoyang_Sun/experiments/labs/lab5
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent20788 F:\Haoyang_Sun\experiments\labs\lab5\lab5.xpr
+# Log file           : F:/Haoyang_Sun/experiments/labs/lab5/vivado.log
+# Journal file       : F:/Haoyang_Sun/experiments/labs/lab5\vivado.jou
+# Running On         : SKULL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 8053 MB
+# Total Virtual      : 24943 MB
+# Available Virtual  : 12815 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Haoyang_Sun/experiments/labs/lab5/lab5.xpr
+update_compile_order -fileset sources_1
+open_bd_design {F:/Haoyang_Sun/experiments/labs/lab5/lab5.srcs/sources_1/bd/design_1/design_1.bd}
+create_project exp1 F:/Haoyang_Sun/experiments/labs/exp1 -part xc7k70tfbv676-1
+current_project lab5
+current_project exp1
+add_files -norecurse F:/Haoyang_Sun/experiments/labs/exp1/exp1source.v
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  F:/Haoyang_Sun/experiments/cg_fpga_slim_1_4 [current_project]
+current_project lab5
+update_ip_catalog
+current_project exp1
+set_property  ip_repo_paths  F:/Haoyang_Sun/experiments/ip_repo [current_project]
+current_project lab5
+update_ip_catalog
+current_project exp1
+set_property  ip_repo_paths  {f:/Haoyang_Sun/experiments/ip_repo F:/Haoyang_Sun/experiments/cg_fpga_slim_1_4} [current_project]
+current_project lab5
+update_ip_catalog
+current_project exp1
+update_ip_catalog
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+close_project
+create_project exp1 F:/Haoyang_Sun/experiments/labs/exp1 -part xc7z020clg400-1
+set_property  ip_repo_paths  F:/Haoyang_Sun/experiments/cg_fpga_slim_1_4 [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {f:/Haoyang_Sun/experiments/cg_fpga_slim_1_4 F:/Haoyang_Sun/experiments/ip_repo} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+add_files -norecurse F:/Haoyang_Sun/experiments/labs/exp1/exp1source.v
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv educg.net:user:cg_fpga_slim:1.4 cg_fpga_slim_0
+endgroup
+undo
+startgroup
+create_bd_cell -type ip -vlnv educg.net:user:cg_fpga:1.4 cg_fpga_0
+endgroup
+set_property location {0.5 -68 9} [get_bd_cells cg_fpga_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins cg_fpga_0/FIXED_IO]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins cg_fpga_0/DDR]
+endgroup
+create_bd_cell -type module -reference adpt_in adpt_in_0
+set_property location {1 -165 254} [get_bd_cells cg_fpga_0]
+set_property location {2 196 568} [get_bd_cells adpt_in_0]
+set_property location {449 -60} [get_bd_intf_ports FIXED_IO_0]
+set_property location {333 -31} [get_bd_intf_ports DDR_0]
+set_property location {2 199 460} [get_bd_cells adpt_in_0]
+connect_bd_net [get_bd_pins cg_fpga_0/gpio_sw_1] [get_bd_pins adpt_in_0/sw_b]
+connect_bd_net [get_bd_pins cg_fpga_0/gpio_sw_2] [get_bd_pins adpt_in_0/sw_a]
+create_bd_cell -type module -reference adpt_out adpt_out_0
+set_property location {0.5 -487 241} [get_bd_cells cg_fpga_0]
+set_property location {1.5 -171 463} [get_bd_cells adpt_in_0]
+set_property location {3 440 435} [get_bd_cells adpt_out_0]
+connect_bd_net [get_bd_pins adpt_out_0/led] [get_bd_pins cg_fpga_0/gpio_led]
+create_bd_cell -type module -reference cla8 cla8_0
+set_property location {3 18 860} [get_bd_cells cla8_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+set_property location {2 -156 878} [get_bd_cells xlconstant_0]
+set_property CONFIG.CONST_VAL {0} [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins cla8_0/cin]
+create_bd_cell -type module -reference pack8 pack8_0
+set_property location {1 -372 826} [get_bd_cells pack8_0]
+create_bd_cell -type module -reference mod8_control mod8_control_0
+set_property location {3 149 186} [get_bd_cells mod8_control_0]
+create_bd_cell -type module -reference m74194 m74194_0
+create_bd_cell -type module -reference m74194 m74194_1
+set_property location {4 297 905} [get_bd_cells cla8_0]
+set_property location {3.5 178 906} [get_bd_cells xlconstant_0]
+set_property location {4 183 927} [get_bd_cells xlconstant_0]
+set_property location {4 181 924} [get_bd_cells xlconstant_0]
+set_property location {3 67 1150} [get_bd_cells xlconstant_0]
+set_property location {3.5 213 1149} [get_bd_cells cla8_0]
+set_property location {4 211 1128} [get_bd_cells cla8_0]
+set_property location {2 -207 1064} [get_bd_cells pack8_0]
+set_property location {2 -204 942} [get_bd_cells pack8_0]
+create_bd_cell -type module -reference pack8 pack8_1
+connect_bd_net [get_bd_pins pack8_0/a] [get_bd_pins cla8_0/a]
+connect_bd_net [get_bd_pins pack8_1/a] [get_bd_pins cla8_0/b]
+create_bd_cell -type module -reference unpack8 unpack8_0
+set_property location {5 436 1128} [get_bd_cells unpack8_0]
+connect_bd_net [get_bd_pins cla8_0/sum] [get_bd_pins unpack8_0/a]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_cla8_0_0 design_1_m74194_1_0 design_1_pack8_0_0 design_1_pack8_1_0 design_1_mod8_control_0_0 design_1_m74194_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0}]
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+create_bd_cell -type module -reference and1 and1_0
+set_property location {4 249 473} [get_bd_cells and1_0]
+set_property location {5.5 613 439} [get_bd_cells adpt_out_0]
+set_property location {4 255 404} [get_bd_cells and1_0]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_0/a]
+set_property location {4 235 172} [get_bd_cells and1_0]
+set_property location {4 207 589} [get_bd_cells m74194_1]
+set_property location {3 -76 467} [get_bd_cells m74194_0]
+set_property location {3 -33 742} [get_bd_cells and1_0]
+set_property location {4 214 490} [get_bd_cells m74194_1]
+set_property location {4 214 432} [get_bd_cells m74194_1]
+set_property location {4 212 406} [get_bd_cells m74194_1]
+create_bd_cell -type module -reference and1 and1_1
+set_property location {4 118 744} [get_bd_cells and1_1]
+create_bd_cell -type module -reference and1 and1_2
+set_property location {3.5 121 743} [get_bd_cells and1_1]
+set_property location {4.5 256 741} [get_bd_cells and1_2]
+set_property location {3.5 58 745} [get_bd_cells and1_1]
+set_property location {3.5 -26 744} [get_bd_cells and1_1]
+set_property location {3 -145 738} [get_bd_cells and1_1]
+set_property location {3.5 -117 740} [get_bd_cells and1_0]
+set_property location {3.5 -188 741} [get_bd_cells and1_0]
+set_property location {4.5 -59 732} [get_bd_cells and1_2]
+set_property location {5 -61 745} [get_bd_cells and1_2]
+set_property location {3.5 -245 741} [get_bd_cells and1_0]
+set_property location {3.5 -313 739} [get_bd_cells and1_0]
+set_property location {3.5 -380 740} [get_bd_cells and1_0]
+set_property location {3.5 -464 744} [get_bd_cells and1_1]
+set_property location {5.5 -178 744} [get_bd_cells and1_2]
+create_bd_cell -type module -reference and1 and1_3
+create_bd_cell -type module -reference and1 and1_4
+set_property location {4 -461 879} [get_bd_cells and1_4]
+create_bd_cell -type module -reference and1 and1_5
+create_bd_cell -type module -reference and1 and1_6
+create_bd_cell -type module -reference and1 and1_7
+set_property location {7 -40 880} [get_bd_cells and1_7]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_2/a]
+set_property location {4 -472 742} [get_bd_cells and1_0]
+set_property location {5 -338 737} [get_bd_cells and1_1]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_1/a]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_3/a]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_4/a]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_5/a]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_6/a]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_7/a]
+set_property location {7.5 186 426} [get_bd_cells m74194_1]
+set_property location {7.5 101 455} [get_bd_cells m74194_1]
+set_property location {8 88 462} [get_bd_cells m74194_1]
+set_property location {8 99 456} [get_bd_cells m74194_1]
+set_property location {8 100 470} [get_bd_cells m74194_1]
+set_property location {8 100 480} [get_bd_cells m74194_1]
+set_property location {8 100 470} [get_bd_cells m74194_1]
+connect_bd_net [get_bd_pins m74194_1/Q0] [get_bd_pins and1_0/b]
+connect_bd_net [get_bd_pins m74194_1/Q1] [get_bd_pins and1_1/b]
+connect_bd_net [get_bd_pins m74194_1/Q2] [get_bd_pins and1_2/b]
+connect_bd_net [get_bd_pins m74194_1/Q3] [get_bd_pins and1_3/b]
+connect_bd_net [get_bd_pins m74194_1/Q4] [get_bd_pins and1_4/b]
+connect_bd_net [get_bd_pins m74194_1/Q5] [get_bd_pins and1_5/b]
+connect_bd_net [get_bd_pins m74194_1/Q6] [get_bd_pins and1_6/b]
+connect_bd_net [get_bd_pins m74194_1/Q7] [get_bd_pins and1_7/b]
+set_property location {8 207 1171} [get_bd_cells xlconstant_0]
+set_property location {8 221 1152} [get_bd_cells xlconstant_0]
+set_property location {7 -37 1421} [get_bd_cells pack8_1]
+set_property location {6 -155 1195} [get_bd_cells pack8_0]
+set_property location {6 -131 1440} [get_bd_cells pack8_1]
+set_property location {6.5 -11 737} [get_bd_cells and1_3]
+set_property location {7 13 884} [get_bd_cells and1_7]
+connect_bd_net [get_bd_pins and1_0/y] [get_bd_pins pack8_0/A0]
+connect_bd_net [get_bd_pins and1_1/y] [get_bd_pins pack8_0/A1]
+connect_bd_net [get_bd_pins and1_2/y] [get_bd_pins pack8_0/A2]
+connect_bd_net [get_bd_pins and1_3/y] [get_bd_pins pack8_0/A3]
+connect_bd_net [get_bd_pins and1_4/y] [get_bd_pins pack8_0/A4]
+connect_bd_net [get_bd_pins and1_5/y] [get_bd_pins pack8_0/A5]
+connect_bd_net [get_bd_pins and1_6/y] [get_bd_pins pack8_0/A6]
+connect_bd_net [get_bd_pins and1_7/y] [get_bd_pins pack8_0/A7]
+delete_bd_objs [get_bd_nets and1_0_y]
+delete_bd_objs [get_bd_nets and1_1_y]
+delete_bd_objs [get_bd_nets and1_2_y]
+delete_bd_objs [get_bd_nets and1_3_y]
+delete_bd_objs [get_bd_nets and1_4_y]
+delete_bd_objs [get_bd_nets and1_5_y]
+delete_bd_objs [get_bd_nets and1_6_y]
+delete_bd_objs [get_bd_nets and1_7_y]
+delete_bd_objs [get_bd_nets m74194_1_Q0]
+delete_bd_objs [get_bd_nets m74194_1_Q4]
+delete_bd_objs [get_bd_nets m74194_1_Q5]
+delete_bd_objs [get_bd_nets m74194_1_Q1]
+delete_bd_objs [get_bd_nets m74194_1_Q6]
+delete_bd_objs [get_bd_nets m74194_1_Q2]
+delete_bd_objs [get_bd_nets m74194_1_Q7]
+delete_bd_objs [get_bd_nets m74194_1_Q3]
+connect_bd_net [get_bd_pins adpt_in_0/B0] [get_bd_pins and1_0/b]
+connect_bd_net [get_bd_pins adpt_in_0/B1] [get_bd_pins and1_1/b]
+connect_bd_net [get_bd_pins adpt_in_0/B2] [get_bd_pins and1_2/b]
+connect_bd_net [get_bd_pins adpt_in_0/B3] [get_bd_pins and1_3/b]
+connect_bd_net [get_bd_pins adpt_in_0/B4] [get_bd_pins and1_4/b]
+connect_bd_net [get_bd_pins adpt_in_0/B5] [get_bd_pins and1_5/b]
+connect_bd_net [get_bd_pins adpt_in_0/B6] [get_bd_pins and1_6/b]
+connect_bd_net [get_bd_pins adpt_in_0/B7] [get_bd_pins and1_7/b]
+connect_bd_net [get_bd_pins and1_0/y] [get_bd_pins pack8_1/A0]
+connect_bd_net [get_bd_pins and1_1/y] [get_bd_pins pack8_1/A1]
+connect_bd_net [get_bd_pins and1_2/y] [get_bd_pins pack8_1/A3]
+undo
+connect_bd_net [get_bd_pins and1_2/y] [get_bd_pins pack8_1/A2]
+startgroup
+connect_bd_net [get_bd_pins and1_3/y] [get_bd_pins pack8_1/A3]
+endgroup
+connect_bd_net [get_bd_pins and1_4/y] [get_bd_pins pack8_1/A4]
+connect_bd_net [get_bd_pins and1_5/y] [get_bd_pins pack8_1/A5]
+connect_bd_net [get_bd_pins and1_6/y] [get_bd_pins pack8_1/A6]
+startgroup
+connect_bd_net [get_bd_pins and1_7/y] [get_bd_pins pack8_1/A7]
+endgroup
+connect_bd_net [get_bd_pins m74194_1/Q0] [get_bd_pins pack8_0/A0]
+connect_bd_net [get_bd_pins m74194_1/Q1] [get_bd_pins pack8_0/A1]
+connect_bd_net [get_bd_pins m74194_1/Q2] [get_bd_pins pack8_0/A2]
+connect_bd_net [get_bd_pins m74194_1/Q3] [get_bd_pins pack8_0/A3]
+connect_bd_net [get_bd_pins m74194_1/Q4] [get_bd_pins pack8_0/A4]
+connect_bd_net [get_bd_pins m74194_1/Q5] [get_bd_pins pack8_0/A5]
+connect_bd_net [get_bd_pins m74194_1/Q6] [get_bd_pins pack8_0/A6]
+connect_bd_net [get_bd_pins m74194_1/Q7] [get_bd_pins pack8_0/A7]
+connect_bd_net [get_bd_pins unpack8_0/A0] [get_bd_pins m74194_1/D0]
+connect_bd_net [get_bd_pins unpack8_0/A1] [get_bd_pins m74194_1/D1]
+connect_bd_net [get_bd_pins unpack8_0/A2] [get_bd_pins m74194_1/D2]
+connect_bd_net [get_bd_pins unpack8_0/A3] [get_bd_pins m74194_1/D3]
+connect_bd_net [get_bd_pins unpack8_0/A4] [get_bd_pins m74194_1/D5]
+undo
+connect_bd_net [get_bd_pins unpack8_0/A4] [get_bd_pins m74194_1/D4]
+connect_bd_net [get_bd_pins unpack8_0/A5] [get_bd_pins m74194_1/D5]
+connect_bd_net [get_bd_pins unpack8_0/A6] [get_bd_pins m74194_1/D6]
+connect_bd_net [get_bd_pins unpack8_0/A7] [get_bd_pins m74194_1/D7]
+connect_bd_net [get_bd_pins m74194_0/SR] [get_bd_pins m74194_1/Q0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+endgroup
+set_property CONFIG.CONST_VAL {0} [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_0/SL]
+save_bd_design
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_m74194_0_0 design_1_and1_4_0 design_1_cla8_0_0 design_1_and1_7_0 design_1_and1_6_0 design_1_m74194_1_0 design_1_pack8_0_0 design_1_and1_2_0 design_1_pack8_1_0 design_1_and1_3_0 design_1_and1_1_0 design_1_mod8_control_0_0 design_1_and1_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0 design_1_and1_5_0}]
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+connect_bd_net [get_bd_pins cg_fpga_0/btn_clk] [get_bd_pins adpt_in_0/btn_clk]
+connect_bd_net [get_bd_pins cg_fpga_0/btn_rst] [get_bd_pins adpt_in_0/btn_rst]
+connect_bd_net [get_bd_pins adpt_in_0/clk] [get_bd_pins m74194_0/CLK]
+connect_bd_net [get_bd_pins adpt_in_0/clk] [get_bd_pins m74194_1/CLK]
+connect_bd_net [get_bd_pins adpt_in_0/clr] [get_bd_pins m74194_0/CLR_n]
+connect_bd_net [get_bd_pins adpt_in_0/clr] [get_bd_pins m74194_1/CLR_n]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_1/SL]
+report_ip_status -name ip_status 
+connect_bd_net [get_bd_pins adpt_in_0/A1] [get_bd_pins m74194_0/D2]
+delete_bd_objs [get_bd_nets adpt_in_0_A1]
+connect_bd_net [get_bd_pins adpt_in_0/A1] [get_bd_pins m74194_0/D1]
+connect_bd_net [get_bd_pins adpt_in_0/A0] [get_bd_pins m74194_0/D0]
+connect_bd_net [get_bd_pins adpt_in_0/A2] [get_bd_pins m74194_0/D2]
+connect_bd_net [get_bd_pins adpt_in_0/A3] [get_bd_pins m74194_0/D3]
+connect_bd_net [get_bd_pins adpt_in_0/A4] [get_bd_pins m74194_0/D4]
+connect_bd_net [get_bd_pins adpt_in_0/A5] [get_bd_pins m74194_0/D5]
+connect_bd_net [get_bd_pins adpt_in_0/A6] [get_bd_pins m74194_0/D6]
+connect_bd_net [get_bd_pins adpt_in_0/A7] [get_bd_pins m74194_0/D7]
+set_property location {2 -882 1646} [get_bd_cells mod8_control_0]
+set_property location {2 -920 1393} [get_bd_cells mod8_control_0]
+set_property location {2 -910 1216} [get_bd_cells mod8_control_0]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_m74194_0_0 design_1_and1_4_0 design_1_cla8_0_0 design_1_and1_7_0 design_1_and1_6_0 design_1_m74194_1_0 design_1_pack8_0_0 design_1_and1_2_0 design_1_pack8_1_0 design_1_and1_3_0 design_1_and1_1_0 design_1_mod8_control_0_0 design_1_and1_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0 design_1_and1_5_0}]
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_cg_fpga_0_0] }
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_in_0_0_synth_1 design_1_adpt_out_0_0_synth_1 design_1_and1_0_0_synth_1 design_1_and1_1_0_synth_1 design_1_and1_2_0_synth_1 design_1_and1_3_0_synth_1 design_1_and1_4_0_synth_1 design_1_and1_5_0_synth_1 design_1_and1_6_0_synth_1 design_1_and1_7_0_synth_1 design_1_cg_fpga_0_0_synth_1 design_1_cla8_0_0_synth_1 design_1_m74194_0_0_synth_1 design_1_m74194_1_0_synth_1 design_1_mod8_control_0_0_synth_1 design_1_pack8_0_0_synth_1 design_1_pack8_1_0_synth_1 design_1_unpack8_0_0_synth_1 -jobs 16
+wait_on_run design_1_adpt_in_0_0_synth_1
+wait_on_run design_1_adpt_out_0_0_synth_1
+wait_on_run design_1_and1_0_0_synth_1
+wait_on_run design_1_and1_1_0_synth_1
+wait_on_run design_1_and1_2_0_synth_1
+wait_on_run design_1_and1_3_0_synth_1
+wait_on_run design_1_and1_4_0_synth_1
+wait_on_run design_1_and1_5_0_synth_1
+wait_on_run design_1_and1_6_0_synth_1
+wait_on_run design_1_and1_7_0_synth_1
+wait_on_run design_1_cg_fpga_0_0_synth_1
+wait_on_run design_1_cla8_0_0_synth_1
+wait_on_run design_1_m74194_0_0_synth_1
+wait_on_run design_1_m74194_1_0_synth_1
+wait_on_run design_1_mod8_control_0_0_synth_1
+wait_on_run design_1_pack8_0_0_synth_1
+wait_on_run design_1_pack8_1_0_synth_1
+wait_on_run design_1_unpack8_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+current_project lab5
+current_project exp1
+create_bd_cell -type module -reference m74161 m74161_0
+connect_bd_net [get_bd_pins m74161_0/Q3] [get_bd_pins mod8_control_0/Q3]
+connect_bd_net [get_bd_pins m74161_0/Q2] [get_bd_pins mod8_control_0/Q2]
+connect_bd_net [get_bd_pins m74161_0/Q1] [get_bd_pins mod8_control_0/Q1]
+connect_bd_net [get_bd_pins m74161_0/Q0] [get_bd_pins mod8_control_0/Q0]
+current_project lab5
+current_project exp1
+current_project lab5
+current_project exp1
+current_project lab5
+current_project exp1
+connect_bd_net [get_bd_pins adpt_in_0/clr] [get_bd_pins mod8_control_0/rst]
+current_project lab5
+current_project exp1
+connect_bd_net [get_bd_pins adpt_in_0/clk] [get_bd_pins m74161_0/CLK]
+connect_bd_net [get_bd_pins mod8_control_0/clear_signal] [get_bd_pins m74161_0/CLR_n]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_3
+endgroup
+set_property location {2 -909 1227} [get_bd_cells mod8_control_0]
+set_property location {2 -992 1217} [get_bd_cells mod8_control_0]
+set_property location {1 -1191 1539} [get_bd_cells xlconstant_3]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins m74161_0/ENP]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins m74161_0/ENT]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins m74161_0/LD_n]
+set_property CONFIG.CONST_VAL {0} [get_bd_cells xlconstant_3]
+connect_bd_net [get_bd_pins xlconstant_3/dout] [get_bd_pins m74161_0/A3]
+connect_bd_net [get_bd_pins xlconstant_3/dout] [get_bd_pins m74161_0/A2]
+connect_bd_net [get_bd_pins xlconstant_3/dout] [get_bd_pins m74161_0/A1]
+connect_bd_net [get_bd_pins xlconstant_3/dout] [get_bd_pins m74161_0/A0]
+connect_bd_net [get_bd_pins mod8_control_0/clear_signal] [get_bd_pins m74194_0/S0]
+connect_bd_net [get_bd_pins mod8_control_0/clear_signal] [get_bd_pins m74194_1/S0]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_1/SR]
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_and1_2_0 design_1_pack8_1_0 design_1_and1_1_0 design_1_and1_5_0 design_1_m74194_0_0 design_1_and1_4_0 design_1_cla8_0_0 design_1_and1_7_0 design_1_and1_6_0 design_1_m74194_1_0 design_1_pack8_0_0 design_1_and1_3_0 design_1_mod8_control_0_0 design_1_and1_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0 design_1_m74161_0_0}]
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_in_0_0_synth_1 design_1_adpt_out_0_0_synth_1 design_1_and1_0_0_synth_1 design_1_and1_1_0_synth_1 design_1_and1_2_0_synth_1 design_1_and1_3_0_synth_1 design_1_and1_4_0_synth_1 design_1_and1_5_0_synth_1 design_1_and1_6_0_synth_1 design_1_and1_7_0_synth_1 design_1_cla8_0_0_synth_1 design_1_m74161_0_0_synth_1 design_1_m74194_0_0_synth_1 design_1_m74194_1_0_synth_1 design_1_mod8_control_0_0_synth_1 design_1_pack8_0_0_synth_1 design_1_pack8_1_0_synth_1 design_1_unpack8_0_0_synth_1 -jobs 16
+wait_on_run design_1_adpt_in_0_0_synth_1
+wait_on_run design_1_adpt_out_0_0_synth_1
+wait_on_run design_1_and1_0_0_synth_1
+wait_on_run design_1_and1_1_0_synth_1
+wait_on_run design_1_and1_2_0_synth_1
+wait_on_run design_1_and1_3_0_synth_1
+wait_on_run design_1_and1_4_0_synth_1
+wait_on_run design_1_and1_5_0_synth_1
+wait_on_run design_1_and1_6_0_synth_1
+wait_on_run design_1_and1_7_0_synth_1
+wait_on_run design_1_cla8_0_0_synth_1
+wait_on_run design_1_m74161_0_0_synth_1
+wait_on_run design_1_m74194_0_0_synth_1
+wait_on_run design_1_m74194_1_0_synth_1
+wait_on_run design_1_mod8_control_0_0_synth_1
+wait_on_run design_1_pack8_0_0_synth_1
+wait_on_run design_1_pack8_1_0_synth_1
+wait_on_run design_1_unpack8_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+current_project lab5
+current_project exp1
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_and1_2_0 design_1_pack8_1_0 design_1_and1_1_0 design_1_and1_5_0 design_1_m74194_0_0 design_1_and1_4_0 design_1_cla8_0_0 design_1_m74161_0_0 design_1_and1_7_0 design_1_and1_6_0 design_1_m74194_1_0 design_1_pack8_0_0 design_1_and1_3_0 design_1_mod8_control_0_0 design_1_and1_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0}]
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_in_0_0_synth_1 design_1_adpt_out_0_0_synth_1 design_1_and1_0_0_synth_1 design_1_and1_1_0_synth_1 design_1_and1_2_0_synth_1 design_1_and1_3_0_synth_1 design_1_and1_4_0_synth_1 design_1_and1_5_0_synth_1 design_1_and1_6_0_synth_1 design_1_and1_7_0_synth_1 design_1_cla8_0_0_synth_1 design_1_m74161_0_0_synth_1 design_1_m74194_0_0_synth_1 design_1_m74194_1_0_synth_1 design_1_mod8_control_0_0_synth_1 design_1_pack8_0_0_synth_1 design_1_pack8_1_0_synth_1 design_1_unpack8_0_0_synth_1 -jobs 16
+wait_on_run design_1_adpt_in_0_0_synth_1
+wait_on_run design_1_adpt_out_0_0_synth_1
+wait_on_run design_1_and1_0_0_synth_1
+wait_on_run design_1_and1_1_0_synth_1
+wait_on_run design_1_and1_2_0_synth_1
+wait_on_run design_1_and1_3_0_synth_1
+wait_on_run design_1_and1_4_0_synth_1
+wait_on_run design_1_and1_5_0_synth_1
+wait_on_run design_1_and1_6_0_synth_1
+wait_on_run design_1_and1_7_0_synth_1
+wait_on_run design_1_cla8_0_0_synth_1
+wait_on_run design_1_m74161_0_0_synth_1
+wait_on_run design_1_m74194_0_0_synth_1
+wait_on_run design_1_m74194_1_0_synth_1
+wait_on_run design_1_mod8_control_0_0_synth_1
+wait_on_run design_1_pack8_0_0_synth_1
+wait_on_run design_1_pack8_1_0_synth_1
+wait_on_run design_1_unpack8_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_nets adpt_in_0_A6] [get_bd_nets adpt_in_0_A5] [get_bd_nets adpt_in_0_A4] [get_bd_nets adpt_in_0_A7] [get_bd_nets adpt_in_0_A1] [get_bd_nets adpt_in_0_A0] [get_bd_nets adpt_in_0_A2] [get_bd_nets adpt_in_0_A3] [get_bd_cells m74194_0]
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_nets m74194_1_Q6] [get_bd_nets m74194_1_Q3] [get_bd_nets unpack8_0_A7] [get_bd_nets unpack8_0_A6] [get_bd_nets unpack8_0_A5] [get_bd_nets unpack8_0_A2] [get_bd_nets unpack8_0_A0] [get_bd_nets unpack8_0_A3] [get_bd_nets unpack8_0_A1] [get_bd_nets m74194_1_Q2] [get_bd_nets m74194_1_Q1] [get_bd_nets unpack8_0_A4] [get_bd_nets m74194_1_Q4] [get_bd_nets xlconstant_1_dout] [get_bd_nets m74194_1_Q0] [get_bd_nets m74194_1_Q5] [get_bd_nets m74194_1_Q7] [get_bd_cells m74194_1]
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_and1_2_0 design_1_pack8_1_0 design_1_and1_1_0 design_1_and1_5_0 design_1_and1_4_0 design_1_cla8_0_0 design_1_m74161_0_0 design_1_and1_7_0 design_1_and1_6_0 design_1_pack8_0_0 design_1_and1_3_0 design_1_mod8_control_0_0 design_1_and1_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0}]
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_in_0_0_synth_1 design_1_adpt_out_0_0_synth_1 design_1_and1_0_0_synth_1 design_1_and1_1_0_synth_1 design_1_and1_2_0_synth_1 design_1_and1_3_0_synth_1 design_1_and1_4_0_synth_1 design_1_and1_5_0_synth_1 design_1_and1_6_0_synth_1 design_1_and1_7_0_synth_1 design_1_cla8_0_0_synth_1 design_1_m74161_0_0_synth_1 design_1_mod8_control_0_0_synth_1 design_1_pack8_0_0_synth_1 design_1_pack8_1_0_synth_1 design_1_unpack8_0_0_synth_1 -jobs 16
+wait_on_run design_1_adpt_in_0_0_synth_1
+wait_on_run design_1_adpt_out_0_0_synth_1
+wait_on_run design_1_and1_0_0_synth_1
+wait_on_run design_1_and1_1_0_synth_1
+wait_on_run design_1_and1_2_0_synth_1
+wait_on_run design_1_and1_3_0_synth_1
+wait_on_run design_1_and1_4_0_synth_1
+wait_on_run design_1_and1_5_0_synth_1
+wait_on_run design_1_and1_6_0_synth_1
+wait_on_run design_1_and1_7_0_synth_1
+wait_on_run design_1_cla8_0_0_synth_1
+wait_on_run design_1_m74161_0_0_synth_1
+wait_on_run design_1_mod8_control_0_0_synth_1
+wait_on_run design_1_pack8_0_0_synth_1
+wait_on_run design_1_pack8_1_0_synth_1
+wait_on_run design_1_unpack8_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_and1_2_0 design_1_pack8_1_0 design_1_and1_1_0 design_1_and1_5_0 design_1_and1_4_0 design_1_cla8_0_0 design_1_m74161_0_0 design_1_and1_7_0 design_1_and1_6_0 design_1_pack8_0_0 design_1_and1_3_0 design_1_mod8_control_0_0 design_1_and1_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0}]
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_in_0_0_synth_1 design_1_adpt_out_0_0_synth_1 design_1_and1_0_0_synth_1 design_1_and1_1_0_synth_1 design_1_and1_2_0_synth_1 design_1_and1_3_0_synth_1 design_1_and1_4_0_synth_1 design_1_and1_5_0_synth_1 design_1_and1_6_0_synth_1 design_1_and1_7_0_synth_1 design_1_cla8_0_0_synth_1 design_1_m74161_0_0_synth_1 design_1_mod8_control_0_0_synth_1 design_1_pack8_0_0_synth_1 design_1_pack8_1_0_synth_1 design_1_unpack8_0_0_synth_1 -jobs 16
+wait_on_run design_1_adpt_in_0_0_synth_1
+wait_on_run design_1_adpt_out_0_0_synth_1
+wait_on_run design_1_and1_0_0_synth_1
+wait_on_run design_1_and1_1_0_synth_1
+wait_on_run design_1_and1_2_0_synth_1
+wait_on_run design_1_and1_3_0_synth_1
+wait_on_run design_1_and1_4_0_synth_1
+wait_on_run design_1_and1_5_0_synth_1
+wait_on_run design_1_and1_6_0_synth_1
+wait_on_run design_1_and1_7_0_synth_1
+wait_on_run design_1_cla8_0_0_synth_1
+wait_on_run design_1_m74161_0_0_synth_1
+wait_on_run design_1_mod8_control_0_0_synth_1
+wait_on_run design_1_pack8_0_0_synth_1
+wait_on_run design_1_pack8_1_0_synth_1
+wait_on_run design_1_unpack8_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+create_bd_cell -type module -reference m74194 m74194_0
+set_property location {4 -507 416} [get_bd_cells m74194_0]
+set_property location {4 -489 473} [get_bd_cells m74194_0]
+set_property location {4 -476 375} [get_bd_cells m74194_0]
+set_property location {4 -497 501} [get_bd_cells m74194_0]
+set_property location {4 -498 543} [get_bd_cells m74194_0]
+connect_bd_net [get_bd_pins adpt_in_0/clk] [get_bd_pins m74194_0/CLK]
+connect_bd_net [get_bd_pins adpt_in_0/clr] [get_bd_pins m74194_0/CLR_n]
+save_bd_design
+connect_bd_net [get_bd_pins mod8_control_0/clear_signal] [get_bd_pins m74194_0/S0]
+connect_bd_net [get_bd_pins adpt_in_0/en] [get_bd_pins m74194_0/S1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_0/SL]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_0/D1]
+undo
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_0/D0]
+connect_bd_net [get_bd_pins adpt_in_0/A2] [get_bd_pins m74194_0/D2]
+connect_bd_net [get_bd_pins adpt_in_0/A1] [get_bd_pins m74194_0/D1]
+connect_bd_net [get_bd_pins adpt_in_0/A3] [get_bd_pins m74194_0/D3]
+connect_bd_net [get_bd_pins adpt_in_0/A4] [get_bd_pins m74194_0/D4]
+connect_bd_net [get_bd_pins adpt_in_0/A5] [get_bd_pins m74194_0/D5]
+connect_bd_net [get_bd_pins adpt_in_0/A6] [get_bd_pins m74194_0/D6]
+connect_bd_net [get_bd_pins adpt_in_0/A7] [get_bd_pins m74194_0/D7]
+create_bd_cell -type module -reference xor1 xor1_0
+set_property location {3 -754 799} [get_bd_cells xor1_0]
+delete_bd_objs [get_bd_nets adpt_in_0_B0]
+connect_bd_net [get_bd_pins adpt_in_0/B0] [get_bd_pins xor1_0/b]
+connect_bd_net [get_bd_pins adpt_in_0/A0] [get_bd_pins xor1_0/a]
+delete_bd_objs [get_bd_nets adpt_in_0_B0]
+delete_bd_objs [get_bd_nets adpt_in_0_A0]
+delete_bd_objs [get_bd_nets xlconstant_1_dout]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_0/SL]
+delete_bd_objs [get_bd_nets adpt_in_0_A7]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_0/D7]
+connect_bd_net [get_bd_pins adpt_in_0/A0] [get_bd_pins m74194_0/D0]
+create_bd_cell -type module -reference m74194_modified m74194_modified_0
+set_property location {9 830 577} [get_bd_cells m74194_modified_0]
+set_property location {9 850 570} [get_bd_cells m74194_modified_0]
+set_property location {9 850 560} [get_bd_cells m74194_modified_0]
+set_property location {9 850 550} [get_bd_cells m74194_modified_0]
+set_property name m74194_modified_1 [get_bd_cells m74194_modified_0]
+connect_bd_net [get_bd_pins adpt_in_0/clr] [get_bd_pins m74194_modified_1/CLR_n]
+connect_bd_net [get_bd_pins adpt_in_0/clk] [get_bd_pins m74194_modified_1/CLK]
+connect_bd_net [get_bd_pins adpt_in_0/B0] [get_bd_pins and1_0/b]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_0/a]
+delete_bd_objs [get_bd_nets adpt_in_0_B7]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins and1_7/b]
+connect_bd_net [get_bd_pins adpt_in_0/B7] [get_bd_pins xor1_0/b]
+connect_bd_net [get_bd_pins adpt_in_0/A7] [get_bd_pins xor1_0/a]
+connect_bd_net [get_bd_pins xor1_0/y] [get_bd_pins adpt_out_0/SUM15]
+connect_bd_net [get_bd_pins m74194_modified_1/Q0] [get_bd_pins pack8_0/A0]
+connect_bd_net [get_bd_pins m74194_modified_1/Q1] [get_bd_pins pack8_0/A1]
+connect_bd_net [get_bd_pins m74194_modified_1/Q2] [get_bd_pins pack8_0/A2]
+connect_bd_net [get_bd_pins m74194_modified_1/Q3] [get_bd_pins pack8_0/A3]
+connect_bd_net [get_bd_pins m74194_modified_1/Q4] [get_bd_pins pack8_0/A4]
+connect_bd_net [get_bd_pins m74194_modified_1/Q5] [get_bd_pins pack8_0/A5]
+connect_bd_net [get_bd_pins m74194_modified_1/Q6] [get_bd_pins pack8_0/A6]
+connect_bd_net [get_bd_pins m74194_modified_1/Q7] [get_bd_pins pack8_0/A7]
+connect_bd_net [get_bd_pins unpack8_0/A0] [get_bd_pins m74194_modified_1/D0]
+connect_bd_net [get_bd_pins unpack8_0/A1] [get_bd_pins m74194_modified_1/D1]
+connect_bd_net [get_bd_pins unpack8_0/A2] [get_bd_pins m74194_modified_1/D2]
+connect_bd_net [get_bd_pins unpack8_0/A3] [get_bd_pins m74194_modified_1/D3]
+connect_bd_net [get_bd_pins unpack8_0/A4] [get_bd_pins m74194_modified_1/D4]
+connect_bd_net [get_bd_pins unpack8_0/A5] [get_bd_pins m74194_modified_1/D5]
+connect_bd_net [get_bd_pins unpack8_0/A6] [get_bd_pins m74194_modified_1/D6]
+connect_bd_net [get_bd_pins unpack8_0/A7] [get_bd_pins m74194_modified_1/D7]
+connect_bd_net [get_bd_pins mod8_control_0/clear_signal] [get_bd_pins m74194_modified_1/S0]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_modified_1/SL]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_modified_1/S1]
+connect_bd_net [get_bd_pins m74194_modified_1/Q0] [get_bd_pins m74194_0/SR]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_modified_1/SR]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_and1_2_0 design_1_and1_3_0 design_1_adpt_out_0_0 design_1_and1_6_0 design_1_pack8_1_0 design_1_mod8_control_0_0 design_1_and1_1_0 design_1_and1_5_0 design_1_m74161_0_0 design_1_cla8_0_0 design_1_and1_7_0 design_1_m74194_0_0 design_1_and1_4_0 design_1_pack8_0_0 design_1_unpack8_0_0 design_1_and1_0_0 design_1_adpt_in_0_0 design_1_xor1_0_0 design_1_m74194_modified_0_0}]
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_in_0_0_synth_1 design_1_adpt_out_0_0_synth_1 design_1_and1_0_0_synth_1 design_1_and1_1_0_synth_1 design_1_and1_2_0_synth_1 design_1_and1_3_0_synth_1 design_1_and1_4_0_synth_1 design_1_and1_5_0_synth_1 design_1_and1_6_0_synth_1 design_1_and1_7_0_synth_1 design_1_cla8_0_0_synth_1 design_1_m74161_0_0_synth_1 design_1_m74194_0_0_synth_1 design_1_m74194_modified_0_0_synth_1 design_1_mod8_control_0_0_synth_1 design_1_pack8_0_0_synth_1 design_1_pack8_1_0_synth_1 design_1_unpack8_0_0_synth_1 design_1_xor1_0_0_synth_1 -jobs 16
+wait_on_run design_1_adpt_in_0_0_synth_1
+wait_on_run design_1_adpt_out_0_0_synth_1
+wait_on_run design_1_and1_0_0_synth_1
+wait_on_run design_1_and1_1_0_synth_1
+wait_on_run design_1_and1_2_0_synth_1
+wait_on_run design_1_and1_3_0_synth_1
+wait_on_run design_1_and1_4_0_synth_1
+wait_on_run design_1_and1_5_0_synth_1
+wait_on_run design_1_and1_6_0_synth_1
+wait_on_run design_1_and1_7_0_synth_1
+wait_on_run design_1_cla8_0_0_synth_1
+wait_on_run design_1_m74161_0_0_synth_1
+wait_on_run design_1_m74194_0_0_synth_1
+wait_on_run design_1_m74194_modified_0_0_synth_1
+wait_on_run design_1_mod8_control_0_0_synth_1
+wait_on_run design_1_pack8_0_0_synth_1
+wait_on_run design_1_pack8_1_0_synth_1
+wait_on_run design_1_unpack8_0_0_synth_1
+wait_on_run design_1_xor1_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins adpt_out_0/SUM0]
+connect_bd_net [get_bd_pins m74194_0/Q2] [get_bd_pins adpt_out_0/SUM2]
+connect_bd_net [get_bd_pins m74194_0/Q1] [get_bd_pins adpt_out_0/SUM1]
+connect_bd_net [get_bd_pins m74194_0/Q3] [get_bd_pins adpt_out_0/SUM3]
+connect_bd_net [get_bd_pins m74194_0/Q4] [get_bd_pins adpt_out_0/SUM4]
+connect_bd_net [get_bd_pins m74194_0/Q5] [get_bd_pins adpt_out_0/SUM5]
+connect_bd_net [get_bd_pins m74194_0/Q6] [get_bd_pins adpt_out_0/SUM6]
+connect_bd_net [get_bd_pins m74194_0/Q7] [get_bd_pins adpt_out_0/SUM7]
+connect_bd_net [get_bd_pins m74194_modified_1/Q0] [get_bd_pins adpt_out_0/SUM8]
+connect_bd_net [get_bd_pins m74194_modified_1/Q1] [get_bd_pins adpt_out_0/SUM9]
+connect_bd_net [get_bd_pins m74194_modified_1/Q2] [get_bd_pins adpt_out_0/SUM10]
+connect_bd_net [get_bd_pins m74194_modified_1/Q3] [get_bd_pins adpt_out_0/SUM11]
+connect_bd_net [get_bd_pins m74194_modified_1/Q4] [get_bd_pins adpt_out_0/SUM12]
+connect_bd_net [get_bd_pins m74194_modified_1/Q6] [get_bd_pins adpt_out_0/SUM14]
+connect_bd_net [get_bd_pins m74194_modified_1/Q5] [get_bd_pins adpt_out_0/SUM13]
+save_bd_design
+make_wrapper -files [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse f:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+open_bd_design {F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd}
+current_project lab5
+close_project

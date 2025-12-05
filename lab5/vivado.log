@@ -1,0 +1,1462 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Nov 30 15:55:42 2025
+# Process ID         : 27444
+# Current directory  : F:/Haoyang_Sun/experiments/labs/lab5
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent20788 F:\Haoyang_Sun\experiments\labs\lab5\lab5.xpr
+# Log file           : F:/Haoyang_Sun/experiments/labs/lab5/vivado.log
+# Journal file       : F:/Haoyang_Sun/experiments/labs/lab5\vivado.jou
+# Running On         : SKULL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 8053 MB
+# Total Virtual      : 24943 MB
+# Available Virtual  : 12815 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Haoyang_Sun/experiments/labs/lab5/lab5.xpr
+INFO: [Project 1-313] Project file moved from 'D:/vivadoRepo/lab5' since last save.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/11/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/Haoyang_Sun/experiments/labs/ip_repo', nor could it be found using path 'D:/vivadoRepo/ip_repo'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/Haoyang_Sun/experiments/labs/cg_fpga_slim_1_4', nor could it be found using path 'D:/vivadoRepo/cg_fpga_slim_1_4'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/Haoyang_Sun/experiments/labs/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/Haoyang_Sun/experiments/labs/cg_fpga_slim_1_4'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2024.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_cg_fpga_0_0
+
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1254.312 ; gain = 109.930
+update_compile_order -fileset sources_1
+open_bd_design {F:/Haoyang_Sun/experiments/labs/lab5/lab5.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <F:/Haoyang_Sun/experiments/labs/lab5/lab5.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- educg.net:user:cg_fpga:1.4 - cg_fpga_0
+Adding component instance block -- xilinx.com:module_ref:adpt_in:1.0 - adpt_in_0
+Adding component instance block -- xilinx.com:module_ref:adpt_out:1.0 - adpt_out_0
+Adding component instance block -- xilinx.com:module_ref:m74161:1.0 - m74161_0
+Adding component instance block -- xilinx.com:module_ref:BCD7SEG:1.0 - BCD7SEG_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:module_ref:single_4_to_bus:1.0 - single_4_to_bus_0
+Adding component instance block -- xilinx.com:module_ref:mod10_control:1.0 - mod10_control_0
+Successfully read diagram <design_1> from block design file <F:/Haoyang_Sun/experiments/labs/lab5/lab5.srcs/sources_1/bd/design_1/design_1.bd>
+create_project exp1 F:/Haoyang_Sun/experiments/labs/exp1 -part xc7k70tfbv676-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2024.2/data/ip'.
+current_project lab5
+current_project exp1
+add_files -norecurse F:/Haoyang_Sun/experiments/labs/exp1/exp1source.v
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  F:/Haoyang_Sun/experiments/cg_fpga_slim_1_4 [current_project]
+current_project lab5
+update_ip_catalog
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+current_project exp1
+set_property  ip_repo_paths  F:/Haoyang_Sun/experiments/ip_repo [current_project]
+current_project lab5
+update_ip_catalog
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+current_project exp1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/ip_repo'.
+set_property  ip_repo_paths  {f:/Haoyang_Sun/experiments/ip_repo F:/Haoyang_Sun/experiments/cg_fpga_slim_1_4} [current_project]
+current_project lab5
+update_ip_catalog
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+current_project exp1
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/cg_fpga_slim_1_4'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/cg_fpga_slim_1_4'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/cg_fpga_slim_1_4'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/cg_fpga_slim_1_4'.
+close_project
+create_project exp1 F:/Haoyang_Sun/experiments/labs/exp1 -part xc7z020clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2024.2/data/ip'.
+set_property  ip_repo_paths  F:/Haoyang_Sun/experiments/cg_fpga_slim_1_4 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/cg_fpga_slim_1_4'.
+set_property  ip_repo_paths  {f:/Haoyang_Sun/experiments/cg_fpga_slim_1_4 F:/Haoyang_Sun/experiments/ip_repo} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/cg_fpga_slim_1_4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/ip_repo'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/cg_fpga_slim_1_4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/ip_repo'.
+add_files -norecurse F:/Haoyang_Sun/experiments/labs/exp1/exp1source.v
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv educg.net:user:cg_fpga_slim:1.4 cg_fpga_slim_0
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'create_bd_cell -type ip -vlnv educg.net:user:cg_fpga_slim:1.4 cg_fpga_slim_0'
+INFO: [Common 17-17] undo 'startgroup'
+startgroup
+create_bd_cell -type ip -vlnv educg.net:user:cg_fpga:1.4 cg_fpga_0
+endgroup
+set_property location {0.5 -68 9} [get_bd_cells cg_fpga_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins cg_fpga_0/FIXED_IO]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins cg_fpga_0/DDR]
+endgroup
+create_bd_cell -type module -reference adpt_in adpt_in_0
+set_property location {1 -165 254} [get_bd_cells cg_fpga_0]
+set_property location {2 196 568} [get_bd_cells adpt_in_0]
+set_property location {449 -60} [get_bd_intf_ports FIXED_IO_0]
+set_property location {333 -31} [get_bd_intf_ports DDR_0]
+set_property location {2 199 460} [get_bd_cells adpt_in_0]
+connect_bd_net [get_bd_pins cg_fpga_0/gpio_sw_1] [get_bd_pins adpt_in_0/sw_b]
+connect_bd_net [get_bd_pins cg_fpga_0/gpio_sw_2] [get_bd_pins adpt_in_0/sw_a]
+create_bd_cell -type module -reference adpt_out adpt_out_0
+set_property location {0.5 -487 241} [get_bd_cells cg_fpga_0]
+set_property location {1.5 -171 463} [get_bd_cells adpt_in_0]
+set_property location {3 440 435} [get_bd_cells adpt_out_0]
+connect_bd_net [get_bd_pins adpt_out_0/led] [get_bd_pins cg_fpga_0/gpio_led]
+create_bd_cell -type module -reference cla8 cla8_0
+set_property location {3 18 860} [get_bd_cells cla8_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconstant:1.0 for the IP type xilinx.com:ip:xlconstant:1.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconstant:1.1 may be deprecated in future releases. More information on inline hdl IP is available in UG994 
+endgroup
+set_property location {2 -156 878} [get_bd_cells xlconstant_0]
+set_property CONFIG.CONST_VAL {0} [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins cla8_0/cin]
+create_bd_cell -type module -reference pack8 pack8_0
+set_property location {1 -372 826} [get_bd_cells pack8_0]
+create_bd_cell -type module -reference mod8_control mod8_control_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+set_property location {3 149 186} [get_bd_cells mod8_control_0]
+create_bd_cell -type module -reference m74194 m74194_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+create_bd_cell -type module -reference m74194 m74194_1
+set_property location {4 297 905} [get_bd_cells cla8_0]
+set_property location {3.5 178 906} [get_bd_cells xlconstant_0]
+set_property location {4 183 927} [get_bd_cells xlconstant_0]
+set_property location {4 181 924} [get_bd_cells xlconstant_0]
+set_property location {3 67 1150} [get_bd_cells xlconstant_0]
+set_property location {3.5 213 1149} [get_bd_cells cla8_0]
+set_property location {4 211 1128} [get_bd_cells cla8_0]
+set_property location {2 -207 1064} [get_bd_cells pack8_0]
+set_property location {2 -204 942} [get_bd_cells pack8_0]
+create_bd_cell -type module -reference pack8 pack8_1
+connect_bd_net [get_bd_pins pack8_0/a] [get_bd_pins cla8_0/a]
+connect_bd_net [get_bd_pins pack8_1/a] [get_bd_pins cla8_0/b]
+create_bd_cell -type module -reference unpack8 unpack8_0
+set_property location {5 436 1128} [get_bd_cells unpack8_0]
+connect_bd_net [get_bd_pins cla8_0/sum] [get_bd_pins unpack8_0/a]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_cla8_0_0 design_1_m74194_1_0 design_1_pack8_0_0 design_1_pack8_1_0 design_1_mod8_control_0_0 design_1_m74194_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0}]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+Upgrading 'F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_in_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_out_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_cla8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74194_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74194_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_mod8_control_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_unpack8_0_0 to use current project options
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/m74194_0/CLK
+/m74194_1/CLK
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+create_bd_cell -type module -reference and1 and1_0
+set_property location {4 249 473} [get_bd_cells and1_0]
+set_property location {5.5 613 439} [get_bd_cells adpt_out_0]
+set_property location {4 255 404} [get_bd_cells and1_0]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_0/a]
+set_property location {4 235 172} [get_bd_cells and1_0]
+set_property location {4 207 589} [get_bd_cells m74194_1]
+set_property location {3 -76 467} [get_bd_cells m74194_0]
+set_property location {3 -33 742} [get_bd_cells and1_0]
+set_property location {4 214 490} [get_bd_cells m74194_1]
+set_property location {4 214 432} [get_bd_cells m74194_1]
+set_property location {4 212 406} [get_bd_cells m74194_1]
+create_bd_cell -type module -reference and1 and1_1
+set_property location {4 118 744} [get_bd_cells and1_1]
+create_bd_cell -type module -reference and1 and1_2
+set_property location {3.5 121 743} [get_bd_cells and1_1]
+set_property location {4.5 256 741} [get_bd_cells and1_2]
+set_property location {3.5 58 745} [get_bd_cells and1_1]
+set_property location {3.5 -26 744} [get_bd_cells and1_1]
+set_property location {3 -145 738} [get_bd_cells and1_1]
+set_property location {3.5 -117 740} [get_bd_cells and1_0]
+set_property location {3.5 -188 741} [get_bd_cells and1_0]
+set_property location {4.5 -59 732} [get_bd_cells and1_2]
+set_property location {5 -61 745} [get_bd_cells and1_2]
+set_property location {3.5 -245 741} [get_bd_cells and1_0]
+set_property location {3.5 -313 739} [get_bd_cells and1_0]
+set_property location {3.5 -380 740} [get_bd_cells and1_0]
+set_property location {3.5 -464 744} [get_bd_cells and1_1]
+set_property location {5.5 -178 744} [get_bd_cells and1_2]
+create_bd_cell -type module -reference and1 and1_3
+create_bd_cell -type module -reference and1 and1_4
+set_property location {4 -461 879} [get_bd_cells and1_4]
+create_bd_cell -type module -reference and1 and1_5
+create_bd_cell -type module -reference and1 and1_6
+create_bd_cell -type module -reference and1 and1_7
+set_property location {7 -40 880} [get_bd_cells and1_7]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_2/a]
+set_property location {4 -472 742} [get_bd_cells and1_0]
+set_property location {5 -338 737} [get_bd_cells and1_1]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_1/a]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_3/a]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_4/a]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_5/a]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_6/a]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_7/a]
+set_property location {7.5 186 426} [get_bd_cells m74194_1]
+set_property location {7.5 101 455} [get_bd_cells m74194_1]
+set_property location {8 88 462} [get_bd_cells m74194_1]
+set_property location {8 99 456} [get_bd_cells m74194_1]
+set_property location {8 100 470} [get_bd_cells m74194_1]
+set_property location {8 100 480} [get_bd_cells m74194_1]
+set_property location {8 100 470} [get_bd_cells m74194_1]
+connect_bd_net [get_bd_pins m74194_1/Q0] [get_bd_pins and1_0/b]
+connect_bd_net [get_bd_pins m74194_1/Q1] [get_bd_pins and1_1/b]
+connect_bd_net [get_bd_pins m74194_1/Q2] [get_bd_pins and1_2/b]
+connect_bd_net [get_bd_pins m74194_1/Q3] [get_bd_pins and1_3/b]
+connect_bd_net [get_bd_pins m74194_1/Q4] [get_bd_pins and1_4/b]
+connect_bd_net [get_bd_pins m74194_1/Q5] [get_bd_pins and1_5/b]
+connect_bd_net [get_bd_pins m74194_1/Q6] [get_bd_pins and1_6/b]
+connect_bd_net [get_bd_pins m74194_1/Q7] [get_bd_pins and1_7/b]
+set_property location {8 207 1171} [get_bd_cells xlconstant_0]
+set_property location {8 221 1152} [get_bd_cells xlconstant_0]
+set_property location {7 -37 1421} [get_bd_cells pack8_1]
+set_property location {6 -155 1195} [get_bd_cells pack8_0]
+set_property location {6 -131 1440} [get_bd_cells pack8_1]
+set_property location {6.5 -11 737} [get_bd_cells and1_3]
+set_property location {7 13 884} [get_bd_cells and1_7]
+connect_bd_net [get_bd_pins and1_0/y] [get_bd_pins pack8_0/A0]
+connect_bd_net [get_bd_pins and1_1/y] [get_bd_pins pack8_0/A1]
+connect_bd_net [get_bd_pins and1_2/y] [get_bd_pins pack8_0/A2]
+connect_bd_net [get_bd_pins and1_3/y] [get_bd_pins pack8_0/A3]
+connect_bd_net [get_bd_pins and1_4/y] [get_bd_pins pack8_0/A4]
+connect_bd_net [get_bd_pins and1_5/y] [get_bd_pins pack8_0/A5]
+connect_bd_net [get_bd_pins and1_6/y] [get_bd_pins pack8_0/A6]
+connect_bd_net [get_bd_pins and1_7/y] [get_bd_pins pack8_0/A7]
+delete_bd_objs [get_bd_nets and1_0_y]
+delete_bd_objs [get_bd_nets and1_1_y]
+delete_bd_objs [get_bd_nets and1_2_y]
+delete_bd_objs [get_bd_nets and1_3_y]
+delete_bd_objs [get_bd_nets and1_4_y]
+delete_bd_objs [get_bd_nets and1_5_y]
+delete_bd_objs [get_bd_nets and1_6_y]
+delete_bd_objs [get_bd_nets and1_7_y]
+delete_bd_objs [get_bd_nets m74194_1_Q0]
+delete_bd_objs [get_bd_nets m74194_1_Q4]
+delete_bd_objs [get_bd_nets m74194_1_Q5]
+delete_bd_objs [get_bd_nets m74194_1_Q1]
+delete_bd_objs [get_bd_nets m74194_1_Q6]
+delete_bd_objs [get_bd_nets m74194_1_Q2]
+delete_bd_objs [get_bd_nets m74194_1_Q7]
+delete_bd_objs [get_bd_nets m74194_1_Q3]
+connect_bd_net [get_bd_pins adpt_in_0/B0] [get_bd_pins and1_0/b]
+connect_bd_net [get_bd_pins adpt_in_0/B1] [get_bd_pins and1_1/b]
+connect_bd_net [get_bd_pins adpt_in_0/B2] [get_bd_pins and1_2/b]
+connect_bd_net [get_bd_pins adpt_in_0/B3] [get_bd_pins and1_3/b]
+connect_bd_net [get_bd_pins adpt_in_0/B4] [get_bd_pins and1_4/b]
+connect_bd_net [get_bd_pins adpt_in_0/B5] [get_bd_pins and1_5/b]
+connect_bd_net [get_bd_pins adpt_in_0/B6] [get_bd_pins and1_6/b]
+connect_bd_net [get_bd_pins adpt_in_0/B7] [get_bd_pins and1_7/b]
+connect_bd_net [get_bd_pins and1_0/y] [get_bd_pins pack8_1/A0]
+connect_bd_net [get_bd_pins and1_1/y] [get_bd_pins pack8_1/A1]
+connect_bd_net [get_bd_pins and1_2/y] [get_bd_pins pack8_1/A3]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins and1_2/y] [get_bd_pins pack8_1/A3]'
+connect_bd_net [get_bd_pins and1_2/y] [get_bd_pins pack8_1/A2]
+startgroup
+connect_bd_net [get_bd_pins and1_3/y] [get_bd_pins pack8_1/A3]
+endgroup
+connect_bd_net [get_bd_pins and1_4/y] [get_bd_pins pack8_1/A4]
+connect_bd_net [get_bd_pins and1_5/y] [get_bd_pins pack8_1/A5]
+connect_bd_net [get_bd_pins and1_6/y] [get_bd_pins pack8_1/A6]
+startgroup
+connect_bd_net [get_bd_pins and1_7/y] [get_bd_pins pack8_1/A7]
+endgroup
+connect_bd_net [get_bd_pins m74194_1/Q0] [get_bd_pins pack8_0/A0]
+connect_bd_net [get_bd_pins m74194_1/Q1] [get_bd_pins pack8_0/A1]
+connect_bd_net [get_bd_pins m74194_1/Q2] [get_bd_pins pack8_0/A2]
+connect_bd_net [get_bd_pins m74194_1/Q3] [get_bd_pins pack8_0/A3]
+connect_bd_net [get_bd_pins m74194_1/Q4] [get_bd_pins pack8_0/A4]
+connect_bd_net [get_bd_pins m74194_1/Q5] [get_bd_pins pack8_0/A5]
+connect_bd_net [get_bd_pins m74194_1/Q6] [get_bd_pins pack8_0/A6]
+connect_bd_net [get_bd_pins m74194_1/Q7] [get_bd_pins pack8_0/A7]
+connect_bd_net [get_bd_pins unpack8_0/A0] [get_bd_pins m74194_1/D0]
+connect_bd_net [get_bd_pins unpack8_0/A1] [get_bd_pins m74194_1/D1]
+connect_bd_net [get_bd_pins unpack8_0/A2] [get_bd_pins m74194_1/D2]
+connect_bd_net [get_bd_pins unpack8_0/A3] [get_bd_pins m74194_1/D3]
+connect_bd_net [get_bd_pins unpack8_0/A4] [get_bd_pins m74194_1/D5]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins unpack8_0/A4] [get_bd_pins m74194_1/D5]'
+connect_bd_net [get_bd_pins unpack8_0/A4] [get_bd_pins m74194_1/D4]
+connect_bd_net [get_bd_pins unpack8_0/A5] [get_bd_pins m74194_1/D5]
+connect_bd_net [get_bd_pins unpack8_0/A6] [get_bd_pins m74194_1/D6]
+connect_bd_net [get_bd_pins unpack8_0/A7] [get_bd_pins m74194_1/D7]
+connect_bd_net [get_bd_pins m74194_0/SR] [get_bd_pins m74194_1/Q0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconstant:1.0 for the IP type xilinx.com:ip:xlconstant:1.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconstant:1.1 may be deprecated in future releases. More information on inline hdl IP is available in UG994 
+endgroup
+expected number but got ""
+ERROR: [IP_Flow 19-3317] Tcl Error found in 'validate_PARAM_VALUE.CONST_VAL' method. expected number but got ""
+set_property CONFIG.CONST_VAL {0} [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_0/SL]
+save_bd_design
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_m74194_0_0 design_1_and1_4_0 design_1_cla8_0_0 design_1_and1_7_0 design_1_and1_6_0 design_1_m74194_1_0 design_1_pack8_0_0 design_1_and1_2_0 design_1_pack8_1_0 design_1_and1_3_0 design_1_and1_1_0 design_1_mod8_control_0_0 design_1_and1_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0 design_1_and1_5_0}]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+Upgrading 'F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_in_0_0 to use current project options
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'btn_clk'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'btn_rst'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'clr'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_adpt_in_0_0'. These changes may impact your design.
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_out_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_2_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_3_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_4_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_5_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_6_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_7_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_cla8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74194_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74194_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_mod8_control_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_unpack8_0_0 to use current project options
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_adpt_in_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/adpt_in_0/btn_clk
+/m74194_0/CLK
+/m74194_1/CLK
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+connect_bd_net [get_bd_pins cg_fpga_0/btn_clk] [get_bd_pins adpt_in_0/btn_clk]
+connect_bd_net [get_bd_pins cg_fpga_0/btn_rst] [get_bd_pins adpt_in_0/btn_rst]
+connect_bd_net [get_bd_pins adpt_in_0/clk] [get_bd_pins m74194_0/CLK]
+connect_bd_net [get_bd_pins adpt_in_0/clk] [get_bd_pins m74194_1/CLK]
+connect_bd_net [get_bd_pins adpt_in_0/clr] [get_bd_pins m74194_0/CLR_n]
+connect_bd_net [get_bd_pins adpt_in_0/clr] [get_bd_pins m74194_1/CLR_n]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_1/SL]
+report_ip_status -name ip_status 
+connect_bd_net [get_bd_pins adpt_in_0/A1] [get_bd_pins m74194_0/D2]
+delete_bd_objs [get_bd_nets adpt_in_0_A1]
+connect_bd_net [get_bd_pins adpt_in_0/A1] [get_bd_pins m74194_0/D1]
+connect_bd_net [get_bd_pins adpt_in_0/A0] [get_bd_pins m74194_0/D0]
+connect_bd_net [get_bd_pins adpt_in_0/A2] [get_bd_pins m74194_0/D2]
+connect_bd_net [get_bd_pins adpt_in_0/A3] [get_bd_pins m74194_0/D3]
+connect_bd_net [get_bd_pins adpt_in_0/A4] [get_bd_pins m74194_0/D4]
+connect_bd_net [get_bd_pins adpt_in_0/A5] [get_bd_pins m74194_0/D5]
+connect_bd_net [get_bd_pins adpt_in_0/A6] [get_bd_pins m74194_0/D6]
+connect_bd_net [get_bd_pins adpt_in_0/A7] [get_bd_pins m74194_0/D7]
+set_property location {2 -882 1646} [get_bd_cells mod8_control_0]
+set_property location {2 -920 1393} [get_bd_cells mod8_control_0]
+set_property location {2 -910 1216} [get_bd_cells mod8_control_0]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_m74194_0_0 design_1_and1_4_0 design_1_cla8_0_0 design_1_and1_7_0 design_1_and1_6_0 design_1_m74194_1_0 design_1_pack8_0_0 design_1_and1_2_0 design_1_pack8_1_0 design_1_and1_3_0 design_1_and1_1_0 design_1_mod8_control_0_0 design_1_and1_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0 design_1_and1_5_0}]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+Upgrading 'F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_in_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_out_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_2_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_3_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_4_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_5_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_6_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_7_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_cla8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74194_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74194_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_mod8_control_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_unpack8_0_0 to use current project options
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/adpt_out_0/SUM15
+/adpt_out_0/SUM14
+/adpt_out_0/SUM13
+/adpt_out_0/SUM12
+/adpt_out_0/SUM11
+/adpt_out_0/SUM10
+/adpt_out_0/SUM9
+/adpt_out_0/SUM8
+/adpt_out_0/SUM7
+/adpt_out_0/SUM6
+/adpt_out_0/SUM5
+/adpt_out_0/SUM4
+/adpt_out_0/SUM3
+/adpt_out_0/SUM2
+/adpt_out_0/SUM1
+/adpt_out_0/SUM0
+/mod8_control_0/Q3
+/mod8_control_0/Q2
+/mod8_control_0/Q1
+/mod8_control_0/Q0
+/mod8_control_0/rst
+/m74194_0/S1
+/m74194_0/S0
+/m74194_1/SR
+/m74194_1/S1
+/m74194_1/S0
+
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_in_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cla8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m74194_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m74194_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mod8_control_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pack8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pack8_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block unpack8_0 .
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_axi_gpio_0_0 (AXI GPIO 2.0) from revision 29 to revision 35
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_cg_fpga_axi_gpio_o1_0 (AXI GPIO 2.0) from revision 29 to revision 35
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_cg_fpga_axi_gpio_o1_1 (AXI GPIO 2.0) from revision 29 to revision 35
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_cg_fpga_axi_gpio_i1_0 (AXI GPIO 2.0) from revision 29 to revision 35
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_axi_uartlite_0_0 (AXI Uartlite 2.0) from revision 31 to revision 37
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_axi_intc_0_0 (AXI Interrupt Controller 4.1) from revision 17 to revision 20
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_rst_ps7_0_50M_0 (Processor System Reset 5.0) from revision 13 to revision 16
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xbar_1 (AXI Crossbar 2.1) from revision 28 to revision 34
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_auto_pc_0 (AXI Protocol Converter 2.1) from revision 27 to revision 33
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconcat_0_0 (Concat 2.1) from revision 4 to revision 6
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconcat_1_0 (Concat 2.1) from revision 4 to revision 6
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_v_vid_in_axi4s_0_0 (Video In to AXI4-Stream 5.0) from revision 2 to revision 5
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconcat_2_0 (Concat 2.1) from revision 4 to revision 6
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconcat_3_0 (Concat 2.1) from revision 4 to revision 6
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlslice_0_2 (Slice 1.0) from revision 2 to revision 4
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlslice_0_3 (Slice 1.0) from revision 2 to revision 4
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlslice_1_0 (Slice 1.0) from revision 2 to revision 4
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconstant_0_0 (Constant 1.1) from revision 7 to revision 9
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xbar_0 (AXI Crossbar 2.1) from revision 28 to revision 34
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_auto_pc_1 (AXI Protocol Converter 2.1) from revision 27 to revision 33
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_axi_vdma_0_0 (AXI Video Direct Memory Access 6.3) from revision 15 to revision 21
+INFO: [IP_Flow 19-3420] Updated cg_fpga_processing_system7_0_0 to use current project options
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconstant_1_0 (Constant 1.1) from revision 7 to revision 9
+INFO: [IP_Flow 19-3422] Upgraded cg_fpga_xlconstant_1_1 (Constant 1.1) from revision 7 to revision 9
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cg_fpga_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+Exporting to file F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1928.895 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all design_1_cg_fpga_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_cg_fpga_0_0
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_in_0_0_synth_1 design_1_adpt_out_0_0_synth_1 design_1_and1_0_0_synth_1 design_1_and1_1_0_synth_1 design_1_and1_2_0_synth_1 design_1_and1_3_0_synth_1 design_1_and1_4_0_synth_1 design_1_and1_5_0_synth_1 design_1_and1_6_0_synth_1 design_1_and1_7_0_synth_1 design_1_cg_fpga_0_0_synth_1 design_1_cla8_0_0_synth_1 design_1_m74194_0_0_synth_1 design_1_m74194_1_0_synth_1 design_1_mod8_control_0_0_synth_1 design_1_pack8_0_0_synth_1 design_1_pack8_1_0_synth_1 design_1_unpack8_0_0_synth_1 -jobs 16
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_cg_fpga_0_0
+[Sun Nov 30 17:40:26 2025] Launched design_1_adpt_in_0_0_synth_1, design_1_adpt_out_0_0_synth_1, design_1_and1_0_0_synth_1, design_1_and1_1_0_synth_1, design_1_and1_2_0_synth_1, design_1_and1_3_0_synth_1, design_1_and1_4_0_synth_1, design_1_and1_5_0_synth_1, design_1_and1_6_0_synth_1, design_1_and1_7_0_synth_1, design_1_cg_fpga_0_0_synth_1, design_1_cla8_0_0_synth_1, design_1_m74194_0_0_synth_1, design_1_m74194_1_0_synth_1, design_1_mod8_control_0_0_synth_1, design_1_pack8_0_0_synth_1, design_1_pack8_1_0_synth_1, design_1_unpack8_0_0_synth_1...
+Run output will be captured here:
+design_1_adpt_in_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_adpt_in_0_0_synth_1/runme.log
+design_1_adpt_out_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_adpt_out_0_0_synth_1/runme.log
+design_1_and1_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_0_0_synth_1/runme.log
+design_1_and1_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_1_0_synth_1/runme.log
+design_1_and1_2_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_2_0_synth_1/runme.log
+design_1_and1_3_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_3_0_synth_1/runme.log
+design_1_and1_4_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_4_0_synth_1/runme.log
+design_1_and1_5_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_5_0_synth_1/runme.log
+design_1_and1_6_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_6_0_synth_1/runme.log
+design_1_and1_7_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_7_0_synth_1/runme.log
+design_1_cg_fpga_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_cg_fpga_0_0_synth_1/runme.log
+design_1_cla8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_cla8_0_0_synth_1/runme.log
+design_1_m74194_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_m74194_0_0_synth_1/runme.log
+design_1_m74194_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_m74194_1_0_synth_1/runme.log
+design_1_mod8_control_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_mod8_control_0_0_synth_1/runme.log
+design_1_pack8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_pack8_0_0_synth_1/runme.log
+design_1_pack8_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_pack8_1_0_synth_1/runme.log
+design_1_unpack8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_unpack8_0_0_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+current_project lab5
+current_project exp1
+create_bd_cell -type module -reference m74161 m74161_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+create_bd_cell: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 1928.895 ; gain = 0.000
+connect_bd_net [get_bd_pins m74161_0/Q3] [get_bd_pins mod8_control_0/Q3]
+connect_bd_net [get_bd_pins m74161_0/Q2] [get_bd_pins mod8_control_0/Q2]
+connect_bd_net [get_bd_pins m74161_0/Q1] [get_bd_pins mod8_control_0/Q1]
+connect_bd_net [get_bd_pins m74161_0/Q0] [get_bd_pins mod8_control_0/Q0]
+current_project lab5
+current_project exp1
+current_project lab5
+current_project exp1
+current_project lab5
+current_project exp1
+connect_bd_net [get_bd_pins adpt_in_0/clr] [get_bd_pins mod8_control_0/rst]
+current_project lab5
+current_project exp1
+connect_bd_net [get_bd_pins adpt_in_0/clk] [get_bd_pins m74161_0/CLK]
+connect_bd_net [get_bd_pins mod8_control_0/clear_signal] [get_bd_pins m74161_0/CLR_n]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconstant:1.0 for the IP type xilinx.com:ip:xlconstant:1.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconstant:1.1 may be deprecated in future releases. More information on inline hdl IP is available in UG994 
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_3
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconstant:1.0 for the IP type xilinx.com:ip:xlconstant:1.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconstant:1.1 may be deprecated in future releases. More information on inline hdl IP is available in UG994 
+endgroup
+set_property location {2 -909 1227} [get_bd_cells mod8_control_0]
+set_property location {2 -992 1217} [get_bd_cells mod8_control_0]
+set_property location {1 -1191 1539} [get_bd_cells xlconstant_3]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins m74161_0/ENP]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins m74161_0/ENT]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins m74161_0/LD_n]
+set_property CONFIG.CONST_VAL {0} [get_bd_cells xlconstant_3]
+connect_bd_net [get_bd_pins xlconstant_3/dout] [get_bd_pins m74161_0/A3]
+connect_bd_net [get_bd_pins xlconstant_3/dout] [get_bd_pins m74161_0/A2]
+connect_bd_net [get_bd_pins xlconstant_3/dout] [get_bd_pins m74161_0/A1]
+connect_bd_net [get_bd_pins xlconstant_3/dout] [get_bd_pins m74161_0/A0]
+connect_bd_net [get_bd_pins mod8_control_0/clear_signal] [get_bd_pins m74194_0/S0]
+connect_bd_net [get_bd_pins mod8_control_0/clear_signal] [get_bd_pins m74194_1/S0]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_1/SR]
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_and1_2_0 design_1_pack8_1_0 design_1_and1_1_0 design_1_and1_5_0 design_1_m74194_0_0 design_1_and1_4_0 design_1_cla8_0_0 design_1_and1_7_0 design_1_and1_6_0 design_1_m74194_1_0 design_1_pack8_0_0 design_1_and1_3_0 design_1_mod8_control_0_0 design_1_and1_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0 design_1_m74161_0_0}]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+Upgrading 'F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_in_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_out_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_2_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_3_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_4_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_5_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_6_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_7_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_cla8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74161_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74194_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74194_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_mod8_control_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_unpack8_0_0 to use current project options
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+upgrade_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1928.895 ; gain = 0.000
+update_module_reference: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1928.895 ; gain = 0.000
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/adpt_out_0/SUM15
+/adpt_out_0/SUM14
+/adpt_out_0/SUM13
+/adpt_out_0/SUM12
+/adpt_out_0/SUM11
+/adpt_out_0/SUM10
+/adpt_out_0/SUM9
+/adpt_out_0/SUM8
+/adpt_out_0/SUM7
+/adpt_out_0/SUM6
+/adpt_out_0/SUM5
+/adpt_out_0/SUM4
+/adpt_out_0/SUM3
+/adpt_out_0/SUM2
+/adpt_out_0/SUM1
+/adpt_out_0/SUM0
+/m74194_0/S1
+/m74194_1/S1
+
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_in_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cla8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m74194_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m74194_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mod8_control_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pack8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pack8_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block unpack8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m74161_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_3 .
+Exporting to file F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_in_0_0_synth_1 design_1_adpt_out_0_0_synth_1 design_1_and1_0_0_synth_1 design_1_and1_1_0_synth_1 design_1_and1_2_0_synth_1 design_1_and1_3_0_synth_1 design_1_and1_4_0_synth_1 design_1_and1_5_0_synth_1 design_1_and1_6_0_synth_1 design_1_and1_7_0_synth_1 design_1_cla8_0_0_synth_1 design_1_m74161_0_0_synth_1 design_1_m74194_0_0_synth_1 design_1_m74194_1_0_synth_1 design_1_mod8_control_0_0_synth_1 design_1_pack8_0_0_synth_1 design_1_pack8_1_0_synth_1 design_1_unpack8_0_0_synth_1 -jobs 16
+[Sun Nov 30 19:59:57 2025] Launched design_1_adpt_in_0_0_synth_1, design_1_adpt_out_0_0_synth_1, design_1_and1_0_0_synth_1, design_1_and1_1_0_synth_1, design_1_and1_2_0_synth_1, design_1_and1_3_0_synth_1, design_1_and1_4_0_synth_1, design_1_and1_5_0_synth_1, design_1_and1_6_0_synth_1, design_1_and1_7_0_synth_1, design_1_cla8_0_0_synth_1, design_1_m74161_0_0_synth_1, design_1_m74194_0_0_synth_1, design_1_m74194_1_0_synth_1, design_1_mod8_control_0_0_synth_1, design_1_pack8_0_0_synth_1, design_1_pack8_1_0_synth_1, design_1_unpack8_0_0_synth_1...
+Run output will be captured here:
+design_1_adpt_in_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_adpt_in_0_0_synth_1/runme.log
+design_1_adpt_out_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_adpt_out_0_0_synth_1/runme.log
+design_1_and1_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_0_0_synth_1/runme.log
+design_1_and1_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_1_0_synth_1/runme.log
+design_1_and1_2_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_2_0_synth_1/runme.log
+design_1_and1_3_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_3_0_synth_1/runme.log
+design_1_and1_4_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_4_0_synth_1/runme.log
+design_1_and1_5_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_5_0_synth_1/runme.log
+design_1_and1_6_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_6_0_synth_1/runme.log
+design_1_and1_7_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_7_0_synth_1/runme.log
+design_1_cla8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_cla8_0_0_synth_1/runme.log
+design_1_m74161_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_m74161_0_0_synth_1/runme.log
+design_1_m74194_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_m74194_0_0_synth_1/runme.log
+design_1_m74194_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_m74194_1_0_synth_1/runme.log
+design_1_mod8_control_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_mod8_control_0_0_synth_1/runme.log
+design_1_pack8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_pack8_0_0_synth_1/runme.log
+design_1_pack8_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_pack8_1_0_synth_1/runme.log
+design_1_unpack8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_unpack8_0_0_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+current_project lab5
+current_project exp1
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_and1_2_0 design_1_pack8_1_0 design_1_and1_1_0 design_1_and1_5_0 design_1_m74194_0_0 design_1_and1_4_0 design_1_cla8_0_0 design_1_m74161_0_0 design_1_and1_7_0 design_1_and1_6_0 design_1_m74194_1_0 design_1_pack8_0_0 design_1_and1_3_0 design_1_mod8_control_0_0 design_1_and1_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0}]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+Upgrading 'F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_pack8_1_0_synth_1
+
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_unpack8_0_0_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_in_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_out_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_2_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_3_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_4_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_5_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_6_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_7_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_cla8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74161_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74194_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74194_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_mod8_control_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_unpack8_0_0 to use current project options
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+upgrade_ip: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1928.895 ; gain = 0.000
+update_module_reference: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1928.895 ; gain = 0.000
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/adpt_out_0/SUM15
+/adpt_out_0/SUM14
+/adpt_out_0/SUM13
+/adpt_out_0/SUM12
+/adpt_out_0/SUM11
+/adpt_out_0/SUM10
+/adpt_out_0/SUM9
+/adpt_out_0/SUM8
+/adpt_out_0/SUM7
+/adpt_out_0/SUM6
+/adpt_out_0/SUM5
+/adpt_out_0/SUM4
+/adpt_out_0/SUM3
+/adpt_out_0/SUM2
+/adpt_out_0/SUM1
+/adpt_out_0/SUM0
+/m74194_0/S1
+/m74194_1/S1
+
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_in_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cla8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m74194_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m74194_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mod8_control_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pack8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pack8_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block unpack8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m74161_0 .
+Exporting to file F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_in_0_0_synth_1 design_1_adpt_out_0_0_synth_1 design_1_and1_0_0_synth_1 design_1_and1_1_0_synth_1 design_1_and1_2_0_synth_1 design_1_and1_3_0_synth_1 design_1_and1_4_0_synth_1 design_1_and1_5_0_synth_1 design_1_and1_6_0_synth_1 design_1_and1_7_0_synth_1 design_1_cla8_0_0_synth_1 design_1_m74161_0_0_synth_1 design_1_m74194_0_0_synth_1 design_1_m74194_1_0_synth_1 design_1_mod8_control_0_0_synth_1 design_1_pack8_0_0_synth_1 design_1_pack8_1_0_synth_1 design_1_unpack8_0_0_synth_1 -jobs 16
+[Sun Nov 30 20:02:00 2025] Launched design_1_adpt_in_0_0_synth_1, design_1_adpt_out_0_0_synth_1, design_1_and1_0_0_synth_1, design_1_and1_1_0_synth_1, design_1_and1_2_0_synth_1, design_1_and1_3_0_synth_1, design_1_and1_4_0_synth_1, design_1_and1_5_0_synth_1, design_1_and1_6_0_synth_1, design_1_and1_7_0_synth_1, design_1_cla8_0_0_synth_1, design_1_m74161_0_0_synth_1, design_1_m74194_0_0_synth_1, design_1_m74194_1_0_synth_1, design_1_mod8_control_0_0_synth_1, design_1_pack8_0_0_synth_1, design_1_pack8_1_0_synth_1, design_1_unpack8_0_0_synth_1...
+Run output will be captured here:
+design_1_adpt_in_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_adpt_in_0_0_synth_1/runme.log
+design_1_adpt_out_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_adpt_out_0_0_synth_1/runme.log
+design_1_and1_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_0_0_synth_1/runme.log
+design_1_and1_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_1_0_synth_1/runme.log
+design_1_and1_2_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_2_0_synth_1/runme.log
+design_1_and1_3_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_3_0_synth_1/runme.log
+design_1_and1_4_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_4_0_synth_1/runme.log
+design_1_and1_5_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_5_0_synth_1/runme.log
+design_1_and1_6_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_6_0_synth_1/runme.log
+design_1_and1_7_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_7_0_synth_1/runme.log
+design_1_cla8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_cla8_0_0_synth_1/runme.log
+design_1_m74161_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_m74161_0_0_synth_1/runme.log
+design_1_m74194_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_m74194_0_0_synth_1/runme.log
+design_1_m74194_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_m74194_1_0_synth_1/runme.log
+design_1_mod8_control_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_mod8_control_0_0_synth_1/runme.log
+design_1_pack8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_pack8_0_0_synth_1/runme.log
+design_1_pack8_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_pack8_1_0_synth_1/runme.log
+design_1_unpack8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_unpack8_0_0_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_nets adpt_in_0_A6] [get_bd_nets adpt_in_0_A5] [get_bd_nets adpt_in_0_A4] [get_bd_nets adpt_in_0_A7] [get_bd_nets adpt_in_0_A1] [get_bd_nets adpt_in_0_A0] [get_bd_nets adpt_in_0_A2] [get_bd_nets adpt_in_0_A3] [get_bd_cells m74194_0]
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_nets m74194_1_Q6] [get_bd_nets m74194_1_Q3] [get_bd_nets unpack8_0_A7] [get_bd_nets unpack8_0_A6] [get_bd_nets unpack8_0_A5] [get_bd_nets unpack8_0_A2] [get_bd_nets unpack8_0_A0] [get_bd_nets unpack8_0_A3] [get_bd_nets unpack8_0_A1] [get_bd_nets m74194_1_Q2] [get_bd_nets m74194_1_Q1] [get_bd_nets unpack8_0_A4] [get_bd_nets m74194_1_Q4] [get_bd_nets xlconstant_1_dout] [get_bd_nets m74194_1_Q0] [get_bd_nets m74194_1_Q5] [get_bd_nets m74194_1_Q7] [get_bd_cells m74194_1]
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_and1_2_0 design_1_pack8_1_0 design_1_and1_1_0 design_1_and1_5_0 design_1_and1_4_0 design_1_cla8_0_0 design_1_m74161_0_0 design_1_and1_7_0 design_1_and1_6_0 design_1_pack8_0_0 design_1_and1_3_0 design_1_mod8_control_0_0 design_1_and1_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0}]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+Upgrading 'F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_in_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_out_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_2_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_3_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_4_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_5_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_6_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_7_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_cla8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74161_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_mod8_control_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_unpack8_0_0 to use current project options
+WARNING: [BD 41-597] NET <m74194_0_Q0> has no source
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+upgrade_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1975.918 ; gain = 31.996
+update_module_reference: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1975.918 ; gain = 32.547
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/adpt_out_0/SUM15
+/adpt_out_0/SUM14
+/adpt_out_0/SUM13
+/adpt_out_0/SUM12
+/adpt_out_0/SUM11
+/adpt_out_0/SUM10
+/adpt_out_0/SUM9
+/adpt_out_0/SUM8
+/adpt_out_0/SUM7
+/adpt_out_0/SUM6
+/adpt_out_0/SUM5
+/adpt_out_0/SUM4
+/adpt_out_0/SUM3
+/adpt_out_0/SUM2
+/adpt_out_0/SUM1
+/adpt_out_0/SUM0
+/pack8_0/A7
+/pack8_0/A6
+/pack8_0/A5
+/pack8_0/A4
+/pack8_0/A3
+/pack8_0/A2
+/pack8_0/A1
+/pack8_0/A0
+/and1_0/a
+/and1_1/a
+/and1_2/a
+/and1_3/a
+/and1_4/a
+/and1_5/a
+/and1_6/a
+/and1_7/a
+
+WARNING: [BD 41-597] NET <m74194_0_Q0> has no source
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-166] Source port for the net:m74194_0_Q0 is NULL! Connection will be grounded!
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-166] Source port for the net:m74194_0_Q0 is NULL! Connection will be grounded!
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_in_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cla8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mod8_control_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pack8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pack8_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block unpack8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m74161_0 .
+Exporting to file F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_in_0_0_synth_1 design_1_adpt_out_0_0_synth_1 design_1_and1_0_0_synth_1 design_1_and1_1_0_synth_1 design_1_and1_2_0_synth_1 design_1_and1_3_0_synth_1 design_1_and1_4_0_synth_1 design_1_and1_5_0_synth_1 design_1_and1_6_0_synth_1 design_1_and1_7_0_synth_1 design_1_cla8_0_0_synth_1 design_1_m74161_0_0_synth_1 design_1_mod8_control_0_0_synth_1 design_1_pack8_0_0_synth_1 design_1_pack8_1_0_synth_1 design_1_unpack8_0_0_synth_1 -jobs 16
+[Sun Nov 30 20:15:08 2025] Launched design_1_adpt_in_0_0_synth_1, design_1_adpt_out_0_0_synth_1, design_1_and1_0_0_synth_1, design_1_and1_1_0_synth_1, design_1_and1_2_0_synth_1, design_1_and1_3_0_synth_1, design_1_and1_4_0_synth_1, design_1_and1_5_0_synth_1, design_1_and1_6_0_synth_1, design_1_and1_7_0_synth_1, design_1_cla8_0_0_synth_1, design_1_m74161_0_0_synth_1, design_1_mod8_control_0_0_synth_1, design_1_pack8_0_0_synth_1, design_1_pack8_1_0_synth_1, design_1_unpack8_0_0_synth_1...
+Run output will be captured here:
+design_1_adpt_in_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_adpt_in_0_0_synth_1/runme.log
+design_1_adpt_out_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_adpt_out_0_0_synth_1/runme.log
+design_1_and1_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_0_0_synth_1/runme.log
+design_1_and1_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_1_0_synth_1/runme.log
+design_1_and1_2_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_2_0_synth_1/runme.log
+design_1_and1_3_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_3_0_synth_1/runme.log
+design_1_and1_4_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_4_0_synth_1/runme.log
+design_1_and1_5_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_5_0_synth_1/runme.log
+design_1_and1_6_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_6_0_synth_1/runme.log
+design_1_and1_7_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_7_0_synth_1/runme.log
+design_1_cla8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_cla8_0_0_synth_1/runme.log
+design_1_m74161_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_m74161_0_0_synth_1/runme.log
+design_1_mod8_control_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_mod8_control_0_0_synth_1/runme.log
+design_1_pack8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_pack8_0_0_synth_1/runme.log
+design_1_pack8_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_pack8_1_0_synth_1/runme.log
+design_1_unpack8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_unpack8_0_0_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_and1_2_0 design_1_pack8_1_0 design_1_and1_1_0 design_1_and1_5_0 design_1_and1_4_0 design_1_cla8_0_0 design_1_m74161_0_0 design_1_and1_7_0 design_1_and1_6_0 design_1_pack8_0_0 design_1_and1_3_0 design_1_mod8_control_0_0 design_1_and1_0_0 design_1_adpt_out_0_0 design_1_unpack8_0_0 design_1_adpt_in_0_0}]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+Upgrading 'F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_in_0_0 to use current project options
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'en'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_adpt_in_0_0'. These changes may impact your design.
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_out_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_2_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_3_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_4_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_5_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_6_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_7_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_cla8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74161_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_mod8_control_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_unpack8_0_0 to use current project options
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_adpt_in_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+WARNING: [BD 41-597] NET <m74194_0_Q0> has no source
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+upgrade_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3078.586 ; gain = 25.723
+update_module_reference: Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 3078.586 ; gain = 25.723
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/adpt_out_0/SUM15
+/adpt_out_0/SUM14
+/adpt_out_0/SUM13
+/adpt_out_0/SUM12
+/adpt_out_0/SUM11
+/adpt_out_0/SUM10
+/adpt_out_0/SUM9
+/adpt_out_0/SUM8
+/adpt_out_0/SUM7
+/adpt_out_0/SUM6
+/adpt_out_0/SUM5
+/adpt_out_0/SUM4
+/adpt_out_0/SUM3
+/adpt_out_0/SUM2
+/adpt_out_0/SUM1
+/adpt_out_0/SUM0
+/pack8_0/A7
+/pack8_0/A6
+/pack8_0/A5
+/pack8_0/A4
+/pack8_0/A3
+/pack8_0/A2
+/pack8_0/A1
+/pack8_0/A0
+/and1_0/a
+/and1_1/a
+/and1_2/a
+/and1_3/a
+/and1_4/a
+/and1_5/a
+/and1_6/a
+/and1_7/a
+
+WARNING: [BD 41-597] NET <m74194_0_Q0> has no source
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-166] Source port for the net:m74194_0_Q0 is NULL! Connection will be grounded!
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-166] Source port for the net:m74194_0_Q0 is NULL! Connection will be grounded!
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_in_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cla8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mod8_control_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pack8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pack8_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block unpack8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m74161_0 .
+Exporting to file F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_in_0_0_synth_1 design_1_adpt_out_0_0_synth_1 design_1_and1_0_0_synth_1 design_1_and1_1_0_synth_1 design_1_and1_2_0_synth_1 design_1_and1_3_0_synth_1 design_1_and1_4_0_synth_1 design_1_and1_5_0_synth_1 design_1_and1_6_0_synth_1 design_1_and1_7_0_synth_1 design_1_cla8_0_0_synth_1 design_1_m74161_0_0_synth_1 design_1_mod8_control_0_0_synth_1 design_1_pack8_0_0_synth_1 design_1_pack8_1_0_synth_1 design_1_unpack8_0_0_synth_1 -jobs 16
+[Sun Nov 30 20:24:14 2025] Launched design_1_adpt_in_0_0_synth_1, design_1_adpt_out_0_0_synth_1, design_1_and1_0_0_synth_1, design_1_and1_1_0_synth_1, design_1_and1_2_0_synth_1, design_1_and1_3_0_synth_1, design_1_and1_4_0_synth_1, design_1_and1_5_0_synth_1, design_1_and1_6_0_synth_1, design_1_and1_7_0_synth_1, design_1_cla8_0_0_synth_1, design_1_m74161_0_0_synth_1, design_1_mod8_control_0_0_synth_1, design_1_pack8_0_0_synth_1, design_1_pack8_1_0_synth_1, design_1_unpack8_0_0_synth_1...
+Run output will be captured here:
+design_1_adpt_in_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_adpt_in_0_0_synth_1/runme.log
+design_1_adpt_out_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_adpt_out_0_0_synth_1/runme.log
+design_1_and1_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_0_0_synth_1/runme.log
+design_1_and1_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_1_0_synth_1/runme.log
+design_1_and1_2_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_2_0_synth_1/runme.log
+design_1_and1_3_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_3_0_synth_1/runme.log
+design_1_and1_4_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_4_0_synth_1/runme.log
+design_1_and1_5_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_5_0_synth_1/runme.log
+design_1_and1_6_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_6_0_synth_1/runme.log
+design_1_and1_7_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_7_0_synth_1/runme.log
+design_1_cla8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_cla8_0_0_synth_1/runme.log
+design_1_m74161_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_m74161_0_0_synth_1/runme.log
+design_1_mod8_control_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_mod8_control_0_0_synth_1/runme.log
+design_1_pack8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_pack8_0_0_synth_1/runme.log
+design_1_pack8_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_pack8_1_0_synth_1/runme.log
+design_1_unpack8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_unpack8_0_0_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+create_bd_cell -type module -reference m74194 m74194_0
+set_property location {4 -507 416} [get_bd_cells m74194_0]
+set_property location {4 -489 473} [get_bd_cells m74194_0]
+set_property location {4 -476 375} [get_bd_cells m74194_0]
+set_property location {4 -497 501} [get_bd_cells m74194_0]
+set_property location {4 -498 543} [get_bd_cells m74194_0]
+connect_bd_net [get_bd_pins adpt_in_0/clk] [get_bd_pins m74194_0/CLK]
+connect_bd_net [get_bd_pins adpt_in_0/clr] [get_bd_pins m74194_0/CLR_n]
+save_bd_design
+WARNING: [BD 41-597] NET <m74194_0_Q0> has no source
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+save_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 3117.359 ; gain = 0.000
+connect_bd_net [get_bd_pins mod8_control_0/clear_signal] [get_bd_pins m74194_0/S0]
+connect_bd_net [get_bd_pins adpt_in_0/en] [get_bd_pins m74194_0/S1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_0/SL]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_0/D1]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_0/D1]'
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_0/D0]
+connect_bd_net [get_bd_pins adpt_in_0/A2] [get_bd_pins m74194_0/D2]
+connect_bd_net [get_bd_pins adpt_in_0/A1] [get_bd_pins m74194_0/D1]
+connect_bd_net [get_bd_pins adpt_in_0/A3] [get_bd_pins m74194_0/D3]
+connect_bd_net [get_bd_pins adpt_in_0/A4] [get_bd_pins m74194_0/D4]
+connect_bd_net [get_bd_pins adpt_in_0/A5] [get_bd_pins m74194_0/D5]
+connect_bd_net [get_bd_pins adpt_in_0/A6] [get_bd_pins m74194_0/D6]
+connect_bd_net [get_bd_pins adpt_in_0/A7] [get_bd_pins m74194_0/D7]
+create_bd_cell -type module -reference xor1 xor1_0
+set_property location {3 -754 799} [get_bd_cells xor1_0]
+delete_bd_objs [get_bd_nets adpt_in_0_B0]
+connect_bd_net [get_bd_pins adpt_in_0/B0] [get_bd_pins xor1_0/b]
+connect_bd_net [get_bd_pins adpt_in_0/A0] [get_bd_pins xor1_0/a]
+delete_bd_objs [get_bd_nets adpt_in_0_B0]
+delete_bd_objs [get_bd_nets adpt_in_0_A0]
+delete_bd_objs [get_bd_nets xlconstant_1_dout]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_0/SL]
+delete_bd_objs [get_bd_nets adpt_in_0_A7]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_0/D7]
+connect_bd_net [get_bd_pins adpt_in_0/A0] [get_bd_pins m74194_0/D0]
+create_bd_cell -type module -reference m74194_modified m74194_modified_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+set_property location {9 830 577} [get_bd_cells m74194_modified_0]
+set_property location {9 850 570} [get_bd_cells m74194_modified_0]
+set_property location {9 850 560} [get_bd_cells m74194_modified_0]
+set_property location {9 850 550} [get_bd_cells m74194_modified_0]
+set_property name m74194_modified_1 [get_bd_cells m74194_modified_0]
+connect_bd_net [get_bd_pins adpt_in_0/clr] [get_bd_pins m74194_modified_1/CLR_n]
+connect_bd_net [get_bd_pins adpt_in_0/clk] [get_bd_pins m74194_modified_1/CLK]
+connect_bd_net [get_bd_pins adpt_in_0/B0] [get_bd_pins and1_0/b]
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins and1_0/a]
+delete_bd_objs [get_bd_nets adpt_in_0_B7]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins and1_7/b]
+connect_bd_net [get_bd_pins adpt_in_0/B7] [get_bd_pins xor1_0/b]
+connect_bd_net [get_bd_pins adpt_in_0/A7] [get_bd_pins xor1_0/a]
+connect_bd_net [get_bd_pins xor1_0/y] [get_bd_pins adpt_out_0/SUM15]
+connect_bd_net [get_bd_pins m74194_modified_1/Q0] [get_bd_pins pack8_0/A0]
+connect_bd_net [get_bd_pins m74194_modified_1/Q1] [get_bd_pins pack8_0/A1]
+connect_bd_net [get_bd_pins m74194_modified_1/Q2] [get_bd_pins pack8_0/A2]
+connect_bd_net [get_bd_pins m74194_modified_1/Q3] [get_bd_pins pack8_0/A3]
+connect_bd_net [get_bd_pins m74194_modified_1/Q4] [get_bd_pins pack8_0/A4]
+connect_bd_net [get_bd_pins m74194_modified_1/Q5] [get_bd_pins pack8_0/A5]
+connect_bd_net [get_bd_pins m74194_modified_1/Q6] [get_bd_pins pack8_0/A6]
+connect_bd_net [get_bd_pins m74194_modified_1/Q7] [get_bd_pins pack8_0/A7]
+connect_bd_net [get_bd_pins unpack8_0/A0] [get_bd_pins m74194_modified_1/D0]
+connect_bd_net [get_bd_pins unpack8_0/A1] [get_bd_pins m74194_modified_1/D1]
+connect_bd_net [get_bd_pins unpack8_0/A2] [get_bd_pins m74194_modified_1/D2]
+connect_bd_net [get_bd_pins unpack8_0/A3] [get_bd_pins m74194_modified_1/D3]
+connect_bd_net [get_bd_pins unpack8_0/A4] [get_bd_pins m74194_modified_1/D4]
+connect_bd_net [get_bd_pins unpack8_0/A5] [get_bd_pins m74194_modified_1/D5]
+connect_bd_net [get_bd_pins unpack8_0/A6] [get_bd_pins m74194_modified_1/D6]
+connect_bd_net [get_bd_pins unpack8_0/A7] [get_bd_pins m74194_modified_1/D7]
+connect_bd_net [get_bd_pins mod8_control_0/clear_signal] [get_bd_pins m74194_modified_1/S0]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_modified_1/SL]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_modified_1/S1]
+connect_bd_net [get_bd_pins m74194_modified_1/Q0] [get_bd_pins m74194_0/SR]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins m74194_modified_1/SR]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_1_and1_2_0 design_1_and1_3_0 design_1_adpt_out_0_0 design_1_and1_6_0 design_1_pack8_1_0 design_1_mod8_control_0_0 design_1_and1_1_0 design_1_and1_5_0 design_1_m74161_0_0 design_1_cla8_0_0 design_1_and1_7_0 design_1_m74194_0_0 design_1_and1_4_0 design_1_pack8_0_0 design_1_unpack8_0_0 design_1_and1_0_0 design_1_adpt_in_0_0 design_1_xor1_0_0 design_1_m74194_modified_0_0}]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'btn_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'btn_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'btn_rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'btn_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'btn_clk' has no FREQ_HZ parameter.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+Upgrading 'F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_in_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_adpt_out_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_2_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_3_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_4_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_5_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_6_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_and1_7_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_cla8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74161_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74194_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m74194_modified_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_mod8_control_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_pack8_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_unpack8_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_xor1_0_0 to use current project options
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+upgrade_ip: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3157.785 ; gain = 27.395
+update_module_reference: Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 3157.785 ; gain = 27.395
+generate_target all [get_files  F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/adpt_out_0/SUM14
+/adpt_out_0/SUM13
+/adpt_out_0/SUM12
+/adpt_out_0/SUM11
+/adpt_out_0/SUM10
+/adpt_out_0/SUM9
+/adpt_out_0/SUM8
+/adpt_out_0/SUM7
+/adpt_out_0/SUM6
+/adpt_out_0/SUM5
+/adpt_out_0/SUM4
+/adpt_out_0/SUM3
+/adpt_out_0/SUM2
+/adpt_out_0/SUM1
+/adpt_out_0/SUM0
+
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_in_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adpt_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cla8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mod8_control_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pack8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pack8_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block unpack8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and1_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m74161_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m74194_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m74194_modified_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xor1_0 .
+Exporting to file F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_adpt_in_0_0_synth_1 design_1_adpt_out_0_0_synth_1 design_1_and1_0_0_synth_1 design_1_and1_1_0_synth_1 design_1_and1_2_0_synth_1 design_1_and1_3_0_synth_1 design_1_and1_4_0_synth_1 design_1_and1_5_0_synth_1 design_1_and1_6_0_synth_1 design_1_and1_7_0_synth_1 design_1_cla8_0_0_synth_1 design_1_m74161_0_0_synth_1 design_1_m74194_0_0_synth_1 design_1_m74194_modified_0_0_synth_1 design_1_mod8_control_0_0_synth_1 design_1_pack8_0_0_synth_1 design_1_pack8_1_0_synth_1 design_1_unpack8_0_0_synth_1 design_1_xor1_0_0_synth_1 -jobs 16
+[Sun Nov 30 20:42:09 2025] Launched design_1_adpt_in_0_0_synth_1, design_1_adpt_out_0_0_synth_1, design_1_and1_0_0_synth_1, design_1_and1_1_0_synth_1, design_1_and1_2_0_synth_1, design_1_and1_3_0_synth_1, design_1_and1_4_0_synth_1, design_1_and1_5_0_synth_1, design_1_and1_6_0_synth_1, design_1_and1_7_0_synth_1, design_1_cla8_0_0_synth_1, design_1_m74161_0_0_synth_1, design_1_m74194_0_0_synth_1, design_1_m74194_modified_0_0_synth_1, design_1_mod8_control_0_0_synth_1, design_1_pack8_0_0_synth_1, design_1_pack8_1_0_synth_1, design_1_unpack8_0_0_synth_1, design_1_xor1_0_0_synth_1...
+Run output will be captured here:
+design_1_adpt_in_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_adpt_in_0_0_synth_1/runme.log
+design_1_adpt_out_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_adpt_out_0_0_synth_1/runme.log
+design_1_and1_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_0_0_synth_1/runme.log
+design_1_and1_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_1_0_synth_1/runme.log
+design_1_and1_2_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_2_0_synth_1/runme.log
+design_1_and1_3_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_3_0_synth_1/runme.log
+design_1_and1_4_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_4_0_synth_1/runme.log
+design_1_and1_5_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_5_0_synth_1/runme.log
+design_1_and1_6_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_6_0_synth_1/runme.log
+design_1_and1_7_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_and1_7_0_synth_1/runme.log
+design_1_cla8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_cla8_0_0_synth_1/runme.log
+design_1_m74161_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_m74161_0_0_synth_1/runme.log
+design_1_m74194_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_m74194_0_0_synth_1/runme.log
+design_1_m74194_modified_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_m74194_modified_0_0_synth_1/runme.log
+design_1_mod8_control_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_mod8_control_0_0_synth_1/runme.log
+design_1_pack8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_pack8_0_0_synth_1/runme.log
+design_1_pack8_1_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_pack8_1_0_synth_1/runme.log
+design_1_unpack8_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_unpack8_0_0_synth_1/runme.log
+design_1_xor1_0_0_synth_1: F:/Haoyang_Sun/experiments/labs/exp1/exp1.runs/design_1_xor1_0_0_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/modelsim} {questa=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/questa} {riviera=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/riviera} {activehdl=F:/Haoyang_Sun/experiments/labs/exp1/exp1.cache/compile_simlib/activehdl}] -of_objects [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/sim_scripts -ip_user_files_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files -ipstatic_source_dir F:/Haoyang_Sun/experiments/labs/exp1/exp1.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+connect_bd_net [get_bd_pins m74194_0/Q0] [get_bd_pins adpt_out_0/SUM0]
+connect_bd_net [get_bd_pins m74194_0/Q2] [get_bd_pins adpt_out_0/SUM2]
+connect_bd_net [get_bd_pins m74194_0/Q1] [get_bd_pins adpt_out_0/SUM1]
+connect_bd_net [get_bd_pins m74194_0/Q3] [get_bd_pins adpt_out_0/SUM3]
+connect_bd_net [get_bd_pins m74194_0/Q4] [get_bd_pins adpt_out_0/SUM4]
+connect_bd_net [get_bd_pins m74194_0/Q5] [get_bd_pins adpt_out_0/SUM5]
+connect_bd_net [get_bd_pins m74194_0/Q6] [get_bd_pins adpt_out_0/SUM6]
+connect_bd_net [get_bd_pins m74194_0/Q7] [get_bd_pins adpt_out_0/SUM7]
+connect_bd_net [get_bd_pins m74194_modified_1/Q0] [get_bd_pins adpt_out_0/SUM8]
+connect_bd_net [get_bd_pins m74194_modified_1/Q1] [get_bd_pins adpt_out_0/SUM9]
+connect_bd_net [get_bd_pins m74194_modified_1/Q2] [get_bd_pins adpt_out_0/SUM10]
+connect_bd_net [get_bd_pins m74194_modified_1/Q3] [get_bd_pins adpt_out_0/SUM11]
+connect_bd_net [get_bd_pins m74194_modified_1/Q4] [get_bd_pins adpt_out_0/SUM12]
+connect_bd_net [get_bd_pins m74194_modified_1/Q6] [get_bd_pins adpt_out_0/SUM14]
+connect_bd_net [get_bd_pins m74194_modified_1/Q5] [get_bd_pins adpt_out_0/SUM13]
+save_bd_design
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd] -top
+Wrote  : <F:\Haoyang_Sun\experiments\labs\exp1\exp1.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse f:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File F:/Haoyang_Sun/experiments/labs/exp1/exp1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+[Sun Nov 30 20:46:44 2025] Launched synth_1...
+Run output will be captured here: F:/Haoyang_Sun/experiments/labs/exp1/synth_1/runme.log
+[Sun Nov 30 20:46:44 2025] Launched impl_1...
+Run output will be captured here: F:/Haoyang_Sun/experiments/labs/exp1/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 3221.840 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 117 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 3221.840 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 3487.918 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 3487.918 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3487.918 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3487.918 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.295 . Memory (MB): peak = 3487.918 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3487.918 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3487.918 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3487.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 3 instances
+  SRLC32E => SRL16E: 3 instances
+
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 3905.105 ; gain = 683.266
+open_report: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3911.594 ; gain = 5.543
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+open_bd_design {F:/Haoyang_Sun/experiments/labs/exp1/exp1.srcs/sources_1/bd/design_1/design_1.bd}
+current_project lab5
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 30 22:06:09 2025...
