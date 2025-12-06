@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Dec  6 13:12:46 2025
+# Process ID         : 8824
+# Current directory  : F:/Haoyang_Sun/experiments/labs/lab7
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent30816 F:\Haoyang_Sun\experiments\labs\lab7\lab7.xpr
+# Log file           : F:/Haoyang_Sun/experiments/labs/lab7/vivado.log
+# Journal file       : F:/Haoyang_Sun/experiments/labs/lab7\vivado.jou
+# Running On         : SKULL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 8995 MB
+# Total Virtual      : 25886 MB
+# Available Virtual  : 7367 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Haoyang_Sun/experiments/labs/lab7/lab7.xpr
+INFO: [Project 1-313] Project file moved from 'D:/vivadoRepo/lab7' since last save.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/11/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/Haoyang_Sun/experiments/labs/ip_repo', nor could it be found using path 'D:/vivadoRepo/ip_repo'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/Haoyang_Sun/experiments/labs/cg_fpga_slim_1_4', nor could it be found using path 'D:/vivadoRepo/cg_fpga_slim_1_4'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/Haoyang_Sun/experiments/labs/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/Haoyang_Sun/experiments/labs/cg_fpga_slim_1_4'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2024.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_cg_fpga_0_0
+
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  6 13:14:35 2025...
