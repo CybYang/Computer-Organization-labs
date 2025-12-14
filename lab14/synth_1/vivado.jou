@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Dec 15 00:12:11 2025
+# Process ID         : 29088
+# Current directory  : F:/Haoyang_Sun/experiments/labs/lab14/synth_1
+# Command line       : vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file           : F:/Haoyang_Sun/experiments/labs/lab14/synth_1/design_1_wrapper.vds
+# Journal file       : F:/Haoyang_Sun/experiments/labs/lab14/synth_1\vivado.jou
+# Running On         : SKULL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 8716 MB
+# Total Virtual      : 25606 MB
+# Available Virtual  : 6101 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
