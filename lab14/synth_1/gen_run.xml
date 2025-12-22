@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1765728702">
-  <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="design_1_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="design_1_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="design_1_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="design_1_wrapper_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
+  <File Type="RDS-RDS" Name="design_1_wrapper.vds"/>
   <File Type="RDS-DCP" Name="design_1_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="design_1_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="design_1_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/exp14_source.v">
@@ -56,9 +53,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="rom1"/>
@@ -67,9 +62,9 @@
   <BlockFileSet Type="BlockSrcs" Name="design_1_ICR_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ICR_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_m74LS161_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_adpt_in_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_unpack16_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_addr_adpt_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_unpack16_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_adpt_in_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_adpt_out_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_rom1_256x24_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ICR_2_0"/>
@@ -81,6 +76,6 @@
   <BlockFileSet Type="BlockSrcs" Name="design_1_unpack_ctrl8_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_unpack8_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_unpack8_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_shifter8_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_unpack8_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_shifter8_0_1"/>
 </GenRun>

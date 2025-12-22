@@ -1,32 +1,24 @@
 #-----------------------------------------------------------
-# Vivado v2025.1 (64-bit)
-# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
-# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
-# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Sun Nov 23 10:28:15 2025
-# Process ID         : 30516
-# Current directory  : F:/Haoyang_Sun/experiments/labs/lab10
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent16540 F:\Haoyang_Sun\experiments\labs\lab10\lab10.xpr
-# Log file           : F:/Haoyang_Sun/experiments/labs/lab10/vivado.log
-# Journal file       : F:/Haoyang_Sun/experiments/labs/lab10\vivado.jou
-# Running On         : SKULL
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Nov 24 10:46:43 2025
+# Process ID         : 6092
+# Current directory  : D:/vivadoRepo/lab10
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent8640 D:\vivadoRepo\lab10\lab10.xpr
+# Log file           : D:/vivadoRepo/lab10/vivado.log
+# Journal file       : D:/vivadoRepo/lab10\vivado.jou
+# Running On         : vj5PC50
 # Platform           : Windows Server 2016 or Windows 10
-# Operating System   : 26200
-# Processor Detail   : Intel(R) Core(TM) i9-14900HX
-# CPU Frequency      : 2419 MHz
-# CPU Physical cores : 24
-# CPU Logical cores  : 32
-# Host memory        : 16890 MB
-# Swap memory        : 6442 MB
-# Total Virtual      : 23332 MB
-# Available Virtual  : 6711 MB
+# Operating System   : 19042
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12600
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16853 MB
+# Swap memory        : 1342 MB
+# Total Virtual      : 18195 MB
+# Available Virtual  : 11330 MB
 #-----------------------------------------------------------
 start_gui
-open_project F:/Haoyang_Sun/experiments/labs/lab10/lab10.xpr
-update_compile_order -fileset sources_1
-report_ip_status -name ip_status 
-set_property USER_LOCKED 1 [get_ips design_1_cg_fpga_0_0]
-upgrade_ip -srcset ram1 -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  ram1] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips ram1] -no_script -sync -force -quiet
-update_compile_order -fileset sources_1
-open_bd_design {F:/Haoyang_Sun/experiments/labs/lab10/lab10.srcs/sources_1/bd/design_1/design_1.bd}

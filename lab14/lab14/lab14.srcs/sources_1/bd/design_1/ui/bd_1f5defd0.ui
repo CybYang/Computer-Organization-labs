@@ -1,0 +1,105 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.16629",
+   "Default View_TopLeft":"-190,-6",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port FIXED_IO_0 -pg 1 -lvl 14 -x 3160 -y -80 -defaultsOSRD
+preplace port DDR_0 -pg 1 -lvl 14 -x 3160 -y -60 -defaultsOSRD
+preplace inst cg_fpga_0 -pg 1 -lvl 1 -x -40 -y 120 -defaultsOSRD
+preplace inst adpt_in_0 -pg 1 -lvl 2 -x 230 -y 40 -defaultsOSRD
+preplace inst adpt_out_0 -pg 1 -lvl 13 -x 3040 -y 280 -defaultsOSRD
+preplace inst m74LS161_0 -pg 1 -lvl 2 -x 230 -y 240 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x -40 -y 350 -defaultsOSRD
+preplace inst addr_adpt_0 -pg 1 -lvl 3 -x 510 -y 240 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x -40 -y 450 -defaultsOSRD
+preplace inst rom1_256x24_0 -pg 1 -lvl 4 -x 760 -y 240 -defaultsOSRD
+preplace inst ICR_IRD -pg 1 -lvl 6 -x 1280 -y 230 -defaultsOSRD
+preplace inst ICR_IRC -pg 1 -lvl 6 -x 1280 -y 370 -defaultsOSRD
+preplace inst unpack16_0 -pg 1 -lvl 5 -x 1010 -y 240 -defaultsOSRD
+preplace inst R0 -pg 1 -lvl 8 -x 1800 -y 140 -defaultsOSRD
+preplace inst R1 -pg 1 -lvl 8 -x 1800 -y 310 -defaultsOSRD
+preplace inst R2 -pg 1 -lvl 8 -x 1800 -y 470 -defaultsOSRD
+preplace inst and2_0 -pg 1 -lvl 7 -x 1520 -y -100 -defaultsOSRD
+preplace inst unpack_ctrl8_0 -pg 1 -lvl 7 -x 1520 -y 370 -defaultsOSRD
+preplace inst and2_1 -pg 1 -lvl 7 -x 1520 -y 140 -defaultsOSRD
+preplace inst and2_2 -pg 1 -lvl 7 -x 1520 -y 560 -defaultsOSRD
+preplace inst adder8_0 -pg 1 -lvl 10 -x 2260 -y 260 -defaultsOSRD
+preplace inst unpack8_0 -pg 1 -lvl 9 -x 2020 -y 60 -defaultsOSRD
+preplace inst unpack8_1 -pg 1 -lvl 9 -x 2020 -y 310 -defaultsOSRD
+preplace inst unpack8_2 -pg 1 -lvl 12 -x 2740 -y 520 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 11 -x 2510 -y 270 -defaultsOSRD
+preplace inst shifter8_0 -pg 1 -lvl 12 -x 2740 -y 270 -defaultsOSRD
+preplace netloc cg_fpga_0_btn_clk 1 1 1 120 30n
+preplace netloc cg_fpga_0_btn_rst 1 1 1 130 50n
+preplace netloc adpt_out_0_led 1 0 14 -180 660 NJ 660 NJ 660 N 660 N 660 N 660 N 660 N 660 N 660 N 660 N 660 N 660 N 660 3140
+preplace netloc adpt_in_0_clk 1 1 6 130 380 360 110 640 140 N 140 1170 140 1400
+preplace netloc adpt_in_0_rst_n 1 1 7 120 390 350 100 N 100 N 100 1160 150 1390 210 1690
+preplace netloc xlconstant_0_dout 1 1 1 100 200n
+preplace netloc m74LS161_0_Q0 1 2 1 330 260n
+preplace netloc m74LS161_0_Q1 1 2 1 340 240n
+preplace netloc m74LS161_0_Q2 1 2 1 370 220n
+preplace netloc m74LS161_0_Q3 1 2 1 390 200n
+preplace netloc xlconstant_1_dout 1 1 2 110 400 380
+preplace netloc addr_adpt_0_addr_pc 1 3 1 630 240n
+preplace netloc rom1_256x24_0_q 1 4 1 N 240
+preplace netloc unpack16_0_data_out 1 5 1 1150 230n
+preplace netloc unpack16_0_ctrl_out 1 5 1 1140 250n
+preplace netloc ICR_IRC_Dout 1 6 1 N 370
+preplace netloc ICR_IRD_Dout 1 6 2 NJ 230 1650
+preplace netloc unpack_ctrl8_0_CPR0 1 6 2 1420 -10 1630
+preplace netloc unpack_ctrl8_0_CPR1 1 6 2 1420 220 1620
+preplace netloc and2_0_Y 1 7 1 1680 -100n
+preplace netloc and2_1_Y 1 7 1 1680 140n
+preplace netloc unpack_ctrl8_0_CPR2 1 6 2 1420 240 1640
+preplace netloc and2_2_Y 1 7 1 1640 450n
+preplace netloc R0_Dout 1 8 1 1910 60n
+preplace netloc unpack8_0_y7 1 9 1 2180 -10n
+preplace netloc unpack8_0_y6 1 9 1 2170 10n
+preplace netloc unpack8_0_y5 1 9 1 2160 30n
+preplace netloc unpack8_0_y4 1 9 1 2150 50n
+preplace netloc unpack8_0_y3 1 9 1 2140 70n
+preplace netloc unpack8_0_y2 1 9 1 2130 90n
+preplace netloc unpack8_0_y1 1 9 1 2120 110n
+preplace netloc unpack8_0_y0 1 9 1 2110 130n
+preplace netloc R1_Dout 1 8 1 N 310
+preplace netloc unpack8_1_y7 1 9 1 2180 240n
+preplace netloc unpack8_1_y6 1 9 1 2110 260n
+preplace netloc unpack8_1_y5 1 9 1 2180 280n
+preplace netloc unpack8_1_y4 1 9 1 2110 300n
+preplace netloc unpack8_1_y3 1 9 1 2180 320n
+preplace netloc unpack8_1_y2 1 9 1 2110 340n
+preplace netloc unpack8_1_y1 1 9 1 2180 360n
+preplace netloc unpack8_1_y0 1 9 1 2110 380n
+preplace netloc R2_Dout 1 8 4 N 470 2110 520 N 520 N
+preplace netloc unpack8_2_y7 1 12 1 2870 210n
+preplace netloc unpack8_2_y6 1 12 1 2880 230n
+preplace netloc unpack8_2_y5 1 12 1 2890 250n
+preplace netloc unpack8_2_y4 1 12 1 2900 270n
+preplace netloc unpack8_2_y3 1 12 1 2910 290n
+preplace netloc unpack8_2_y2 1 12 1 2920 310n
+preplace netloc unpack8_2_y1 1 12 1 2930 330n
+preplace netloc unpack8_2_y0 1 12 1 2940 350n
+preplace netloc unpack_ctrl8_0_C0 1 7 3 1660 560 NJ 560 2150J
+preplace netloc unpack_ctrl8_0_Kp 1 7 3 1650 550 1930J 440 2180J
+preplace netloc adder8_0_S0 1 10 1 2350 200n
+preplace netloc adder8_0_S1 1 10 1 2360 220n
+preplace netloc adder8_0_S2 1 10 1 2370 240n
+preplace netloc adder8_0_S3 1 10 1 2380 260n
+preplace netloc adder8_0_S4 1 10 1 2390 250n
+preplace netloc adder8_0_S5 1 10 1 2400 230n
+preplace netloc adder8_0_S6 1 10 1 2410 210n
+preplace netloc adder8_0_S7 1 10 1 2420 190n
+preplace netloc xlconcat_0_dout 1 11 1 2600 270n
+preplace netloc unpack_ctrl8_0_LM 1 7 5 1670 230 1920J 490 NJ 490 2340J 140 2600J
+preplace netloc unpack_ctrl8_0_DM 1 7 5 1630 570 NJ 570 NJ 570 2420J 400 2610J
+preplace netloc unpack_ctrl8_0_RM 1 7 5 1680 390 1910J 500 NJ 500 NJ 500 2620J
+preplace netloc shifter8_0_D_out 1 7 6 1690 650 NJ 650 NJ 650 NJ 650 NJ 650 2860
+preplace netloc cg_fpga_0_FIXED_IO 1 1 13 100 -40 N -40 N -40 N -40 N -40 1410 -20 1630 -80 N -80 N -80 N -80 N -80 N -80 N
+preplace netloc cg_fpga_0_DDR 1 1 13 110 -30 N -30 N -30 N -30 N -30 N -30 1670 -70 N -70 N -70 N -70 N -70 N -70 3140
+levelinfo -pg 1 -310 -40 230 510 760 1010 1280 1520 1800 2020 2260 2510 2740 3040 3160
+pagesize -pg 1 -db -bbox -sgen -310 -610 3290 780
+"
+}
+

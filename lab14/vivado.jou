@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Dec 22 00:27:34 2025
+# Process ID         : 48196
+# Current directory  : F:/Haoyang_Sun/experiments/labs/lab14
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent39920 F:\Haoyang_Sun\experiments\labs\lab14\lab14.xpr
+# Log file           : F:/Haoyang_Sun/experiments/labs/lab14/vivado.log
+# Journal file       : F:/Haoyang_Sun/experiments/labs/lab14\vivado.jou
+# Running On         : SKULL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 12275 MB
+# Total Virtual      : 29166 MB
+# Available Virtual  : 16347 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Haoyang_Sun/experiments/labs/lab14/lab14.xpr
+update_compile_order -fileset sources_1
+open_bd_design {F:/Haoyang_Sun/experiments/labs/lab14/lab14.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+open_bd_design {F:/Haoyang_Sun/experiments/labs/lab14/lab14.srcs/sources_1/bd/design_1/design_1.bd}

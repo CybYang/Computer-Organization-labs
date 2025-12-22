@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Dec 14 23:27:59 2025
+# Process ID         : 6408
+# Current directory  : F:/Haoyang_Sun/experiments/labs/lab12
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent20308 F:\Haoyang_Sun\experiments\labs\lab12\lab12.xpr
+# Log file           : F:/Haoyang_Sun/experiments/labs/lab12/vivado.log
+# Journal file       : F:/Haoyang_Sun/experiments/labs/lab12\vivado.jou
+# Running On         : SKULL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25480 MB
+# Available Virtual  : 7753 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Haoyang_Sun/experiments/labs/lab12/lab12.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/cg_fpga_slim_1_4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Haoyang_Sun/experiments/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2024.2/data/ip'.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1303.352 ; gain = 174.691
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 15 00:25:22 2025...

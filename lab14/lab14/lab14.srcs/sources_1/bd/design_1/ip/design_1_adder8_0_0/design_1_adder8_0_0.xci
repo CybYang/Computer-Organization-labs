@@ -1,0 +1,68 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "design_1_adder8_0_0",
+    "cell_name": "adder8_0",
+    "component_reference": "xilinx.com:module_ref:adder8:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../lab14.gen/sources_1/bd/design_1/ip/design_1_adder8_0_0",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "design_1_adder8_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z020" } ],
+        "PACKAGE": [ { "value": "clg400" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../lab14.gen/sources_1/bd/design_1/ip/design_1_adder8_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2024.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "A7": [ { "direction": "in" } ],
+        "A6": [ { "direction": "in" } ],
+        "A5": [ { "direction": "in" } ],
+        "A4": [ { "direction": "in" } ],
+        "A3": [ { "direction": "in" } ],
+        "A2": [ { "direction": "in" } ],
+        "A1": [ { "direction": "in" } ],
+        "A0": [ { "direction": "in" } ],
+        "B7": [ { "direction": "in" } ],
+        "B6": [ { "direction": "in" } ],
+        "B5": [ { "direction": "in" } ],
+        "B4": [ { "direction": "in" } ],
+        "B3": [ { "direction": "in" } ],
+        "B2": [ { "direction": "in" } ],
+        "B1": [ { "direction": "in" } ],
+        "B0": [ { "direction": "in" } ],
+        "C0": [ { "direction": "in" } ],
+        "k": [ { "direction": "in" } ],
+        "S7": [ { "direction": "out" } ],
+        "S6": [ { "direction": "out" } ],
+        "S5": [ { "direction": "out" } ],
+        "S4": [ { "direction": "out" } ],
+        "S3": [ { "direction": "out" } ],
+        "S2": [ { "direction": "out" } ],
+        "S1": [ { "direction": "out" } ],
+        "S0": [ { "direction": "out" } ]
+      }
+    }
+  }
+}

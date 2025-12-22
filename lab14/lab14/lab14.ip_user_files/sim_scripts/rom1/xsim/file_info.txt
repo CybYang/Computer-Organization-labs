@@ -1,0 +1,3 @@
+blk_mem_gen_v8_4.v,verilog,blk_mem_gen_v8_4_9,../../../ipstatic/simulation/blk_mem_gen_v8_4.v,
+rom1.v,verilog,xil_defaultlib,../../../../lab14.gen/sources_1/ip/rom1/sim/rom1.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
